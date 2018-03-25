@@ -1,0 +1,2 @@
+E:\Unity Projects\Tallboy\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+E:\Unity Projects\Tallboy\App\Tallboy\Tallboy.csproj;x86

@@ -1,0 +1,9 @@
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.exe.config
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.exe
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.pdb
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\TallboyBLL.dll
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\TallboyBLL.pdb
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csprojResolveAssemblyReference.cache
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csproj.CoreCompileInputs.cache
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.exe
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.pdb

@@ -1,0 +1,194 @@
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\TallboyBLL.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\TallboyBLL.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csprojResolveAssemblyReference.cache
+E:\Unity Projects\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csproj.CoreCompileInputs.cache
+E:\Unity Projects\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.dll
+E:\Unity Projects\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ClothModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AIModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AnimationModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TextRenderingModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UNETModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.DirectorModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WebModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ARModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VRModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.StyleSheetsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AudioModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GridModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.InputModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticlesLegacyModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TilemapModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VideoModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WindModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CoreModule.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\WinRTLegacy.dll
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AccessibilityModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticleSystemModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PhysicsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VehiclesModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ClothModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AIModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AnimationModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TextRenderingModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainPhysicsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.IMGUIModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UNETModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.DirectorModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityAnalyticsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PerformanceReportingModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityConnectModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WebModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ARModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VRModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIElementsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.StyleSheetsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AssetBundleModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AudioModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CrashReportingModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GameCenterModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GridModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ImageConversionModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.InputModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.JSONSerializeModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticlesLegacyModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.Physics2DModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ScreenCaptureModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SharedInternalsModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteMaskModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteShapeModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TilemapModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestAudioModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestTextureModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestWWWModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VideoModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WindModule.pdb
+E:\Unity Projects\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CoreModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\TallboyBLL.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\TallboyBLL.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ClothModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AIModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AnimationModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TextRenderingModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UNETModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.DirectorModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WebModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ARModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VRModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.StyleSheetsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AudioModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GridModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.InputModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticlesLegacyModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TilemapModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VideoModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WindModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CoreModule.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\WinRTLegacy.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AccessibilityModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticleSystemModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PhysicsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VehiclesModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ClothModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AIModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AnimationModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TextRenderingModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainPhysicsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.IMGUIModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UNETModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.DirectorModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityAnalyticsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.PerformanceReportingModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityConnectModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WebModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ARModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VRModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UIElementsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.StyleSheetsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AssetBundleModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.AudioModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CrashReportingModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GameCenterModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.GridModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ImageConversionModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.InputModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.JSONSerializeModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ParticlesLegacyModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.Physics2DModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.ScreenCaptureModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SharedInternalsModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteMaskModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.SpriteShapeModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TerrainModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.TilemapModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestAudioModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestTextureModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.UnityWebRequestWWWModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.VideoModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.WindModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\UnityEngine.CoreModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csprojResolveAssemblyReference.cache
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csproj.CoreCompileInputs.cache
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.pdb
