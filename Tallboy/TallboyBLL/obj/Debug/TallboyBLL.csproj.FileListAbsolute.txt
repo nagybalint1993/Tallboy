@@ -192,3 +192,4 @@ E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csprojResolveAsse
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csproj.CoreCompileInputs.cache
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.dll
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\Newtonsoft.Json.dll

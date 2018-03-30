@@ -162,6 +162,9 @@
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>E:/Program Files/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>E:/TallBoy/git/Tallboy/Tallboy/Assets/libs/Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="TallboyBLL">
  <HintPath>E:/TallBoy/git/Tallboy/Tallboy/Assets/libs/TallboyBLL.dll</HintPath>
  </Reference>

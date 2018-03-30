@@ -7,3 +7,4 @@ E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csprojResol
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csproj.CoreCompileInputs.cache
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.exe
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.pdb
+E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\Newtonsoft.Json.dll

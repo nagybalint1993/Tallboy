@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -63,11 +64,8 @@ namespace TallboyBLL
                 //Send the GET request
                 httpResponse = await httpClient.GetAsync(requestUri);
                 httpResponse.EnsureSuccessStatusCode();
-                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
-                MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(httpResponseBody));
-                currentMaterial =serializer.ReadObject(ms) as Material;
-                ms.Close();
-
+                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();                
+                currentMaterial = JsonConvert.DeserializeObject<Material>(httpResponseBody);
             }
             catch (Exception ex)
             {
