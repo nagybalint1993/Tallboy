@@ -101,6 +101,11 @@
   <ItemGroup>
     <Compile Include="Database\TallboyDBContext.cs" />
     <Compile Include="Exceptions\TallboyServerException.cs" />
+    <Compile Include="Managers\ContainerManager.cs" />
+    <Compile Include="Managers\ContainerPartContentManager.cs" />
+    <Compile Include="Managers\ContainerPartManager.cs" />
+    <Compile Include="Managers\TaskElementManager.cs" />
+    <Compile Include="Managers\TaskManager.cs" />
     <Compile Include="Managers\TypeManager.cs" />
     <Compile Include="Models\Container.cs" />
     <Compile Include="Models\ContainerPart.cs" />

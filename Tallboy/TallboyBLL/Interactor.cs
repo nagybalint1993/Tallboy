@@ -16,14 +16,14 @@ namespace TallboyBLL
     public class Interactor
     {
         public string description { get; set; }
-        public Material currentMaterial { get; set; }
+        public Models.Type currentType { get; set; }
 
         DataContractJsonSerializer serializer;
 
         public Interactor()
         {
             description = "description";
-            serializer = new DataContractJsonSerializer(typeof(Material));
+            serializer = new DataContractJsonSerializer(typeof(Models.Type));
         }
 
         public void TryToGetTasks()
@@ -53,7 +53,7 @@ namespace TallboyBLL
                 throw new Exception("Invalid header value: " + header);
             }
 
-            Uri requestUri = new Uri("http://localhost:49184/api/materials/5");
+            Uri requestUri = new Uri("http://localhost:49184/api/types/1");
 
             //Send the GET request asynchronously and retrieve the response as a string.
             HttpResponseMessage httpResponse = new HttpResponseMessage();
@@ -64,8 +64,8 @@ namespace TallboyBLL
                 //Send the GET request
                 httpResponse = await httpClient.GetAsync(requestUri);
                 httpResponse.EnsureSuccessStatusCode();
-                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();                
-                currentMaterial = JsonConvert.DeserializeObject<Material>(httpResponseBody);
+                httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
+                currentType = JsonConvert.DeserializeObject<Models.Type>(httpResponseBody);
             }
             catch (Exception ex)
             {

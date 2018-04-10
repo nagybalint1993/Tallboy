@@ -22,6 +22,8 @@ namespace MyWebServer.Controllers
             return new TypeManager().GetType(id);
         }
 
+        /*
+
         // POST api/<controller>
         public void Post([FromBody]string value)
         {
@@ -36,5 +38,8 @@ namespace MyWebServer.Controllers
         public void Delete(int id)
         {
         }
+
+        */
+
     }
 }

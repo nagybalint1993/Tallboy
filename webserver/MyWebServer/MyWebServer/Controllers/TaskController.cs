@@ -4,15 +4,17 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TallboyBLL.Models;
+using TallboyServer.BLL.Managers;
 
 namespace TallboyServer.Controllers
 {
     public class TaskController : ApiController
     {
         // GET api/Task+
-        public IEnumerable<string> Get()
+        public IEnumerable<Task> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new TaskManager().GetTask();
         }
 
         // GET api/Task/5

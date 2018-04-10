@@ -17,8 +17,8 @@ namespace HelperProject
             task.Wait();
 
             Debug.WriteLine(interactor.description);
-            Debug.WriteLine(interactor.currentMaterial.Name);
-            Debug.WriteLine(interactor.currentMaterial.Description);
+            Debug.WriteLine(interactor.currentType.Name);
+            Debug.WriteLine(interactor.currentType.Description);
         }
     }
 }

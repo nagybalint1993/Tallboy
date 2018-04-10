@@ -29,7 +29,7 @@ namespace TallboyServer.BLL.Managers
 
         public List<TallboyBLL.Models.Type> GetTypeList()
         {
-            //GenerateTestData();
+            GenerateTestData();
             using (var ctx= new TallboyDBContext())
             {
                 var types = ctx.Types.ToList();
