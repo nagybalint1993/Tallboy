@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
@@ -10,23 +9,16 @@ using System.Threading.Tasks;
 
 namespace TallboyBLL.Controllers
 {
-    public class TypeController
+    public class TaskElementController
     {
-        private const string actionName = "types";
-        DataContractJsonSerializer serializer;
+        private const string actionName = "taskelement";
 
-
-        public TypeController()
+        public TaskElementController()
         {
-            serializer = new DataContractJsonSerializer(typeof(Models.Type));
         }
 
-        public void TryToGetType(int id)
-        {
-            GetTypeAsync(id);
-        }
-
-        public async Task<TallboyBLL.Models.Type> GetTypeAsync(int typeId)
+        //return the ContainerPartContents which have reference to the Type with the given typeId
+        public async Task<List<TallboyBLL.Models.TaskElement>> GetTaskElementsAsync(int taskId)
         {
             //Create an HTTP client object
             HttpClient httpClient = new HttpClient();
@@ -34,12 +26,12 @@ namespace TallboyBLL.Controllers
             //Add a user-agent header to the GET request. 
             var headers = httpClient.DefaultRequestHeaders;
 
-            Uri requestUri = new Uri(NetworkSettings.ApiURL + "/" + actionName + "/" + typeId.ToString());
+            Uri requestUri = new Uri(NetworkSettings.ApiURL + "/" + actionName + "/" + taskId.ToString());
 
             //Send the GET request asynchronously and retrieve the response as a string.
             HttpResponseMessage httpResponse = new HttpResponseMessage();
             string httpResponseBody = "";
-            TallboyBLL.Models.Type type= null;
+            List<TallboyBLL.Models.TaskElement> containerPartContent = null;
 
             try
             {
@@ -47,13 +39,13 @@ namespace TallboyBLL.Controllers
                 httpResponse = await httpClient.GetAsync(requestUri);
                 httpResponse.EnsureSuccessStatusCode();
                 httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
-                type = JsonConvert.DeserializeObject<Models.Type>(httpResponseBody);
+                containerPartContent = JsonConvert.DeserializeObject<List<Models.TaskElement>>(httpResponseBody);
             }
             catch (Exception ex)
             {
                 httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
             }
-            return type;
+            return containerPartContent;
         }
     }
 }

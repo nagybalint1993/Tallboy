@@ -1,32 +1,23 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
-using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TallboyBLL.Controllers
 {
-    public class TypeController
+    class TaskController
     {
-        private const string actionName = "types";
-        DataContractJsonSerializer serializer;
+        private const string actionName = "tasks";
 
-
-        public TypeController()
+        public TaskController()
         {
-            serializer = new DataContractJsonSerializer(typeof(Models.Type));
         }
 
-        public void TryToGetType(int id)
-        {
-            GetTypeAsync(id);
-        }
-
-        public async Task<TallboyBLL.Models.Type> GetTypeAsync(int typeId)
+        //return with the tasks
+        public async Task<List<TallboyBLL.Models.Task>> GetTasksAsync()
         {
             //Create an HTTP client object
             HttpClient httpClient = new HttpClient();
@@ -34,12 +25,12 @@ namespace TallboyBLL.Controllers
             //Add a user-agent header to the GET request. 
             var headers = httpClient.DefaultRequestHeaders;
 
-            Uri requestUri = new Uri(NetworkSettings.ApiURL + "/" + actionName + "/" + typeId.ToString());
+            Uri requestUri = new Uri(NetworkSettings.ApiURL + "/" + actionName);
 
             //Send the GET request asynchronously and retrieve the response as a string.
             HttpResponseMessage httpResponse = new HttpResponseMessage();
             string httpResponseBody = "";
-            TallboyBLL.Models.Type type= null;
+            List<TallboyBLL.Models.Task> tasks = null;
 
             try
             {
@@ -47,13 +38,13 @@ namespace TallboyBLL.Controllers
                 httpResponse = await httpClient.GetAsync(requestUri);
                 httpResponse.EnsureSuccessStatusCode();
                 httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
-                type = JsonConvert.DeserializeObject<Models.Type>(httpResponseBody);
+                tasks = JsonConvert.DeserializeObject<List<Models.Task>>(httpResponseBody);
             }
             catch (Exception ex)
             {
                 httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
             }
-            return type;
+            return tasks;
         }
     }
 }
