@@ -15,8 +15,11 @@ namespace HelperProject
     {
         static void Main(string[] args)
         {
+            
             Presenter presenter = new Presenter();
             presenter.Start();
+
+            
 
             /*
             TypeController typeController = new TypeController();

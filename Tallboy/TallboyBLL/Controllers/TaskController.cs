@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using TallboyBLL.Models;
 
 namespace TallboyBLL.Controllers
 {
@@ -17,7 +18,7 @@ namespace TallboyBLL.Controllers
         }
 
         //return with the tasks
-        public async Task<List<TallboyBLL.Models.Task>> GetTasksAsync()
+        public async Task<List<TallboyBLL.Models.Task>> GetTasksAsync(Action<List<Models.Task>> getTasksCallback)
         {
             //Create an HTTP client object
             HttpClient httpClient = new HttpClient();
@@ -44,6 +45,10 @@ namespace TallboyBLL.Controllers
             {
                 httpResponseBody = "Error: " + ex.HResult.ToString("X") + " Message: " + ex.Message;
             }
+
+            //Callback
+            getTasksCallback(tasks);
+
             return tasks;
         }
     }

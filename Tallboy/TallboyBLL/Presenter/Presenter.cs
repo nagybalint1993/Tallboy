@@ -17,10 +17,10 @@ namespace TallboyBLL.Presenter
         TypeController typeController;
         TaskController taskController;
 
-        TallboyBLL.Models.Task task;
-        List<TaskElement> taskelements;
-        TaskElement currentElement;
-        
+        TallboyBLL.Models.Task task { get; set; }
+        List<TaskElement> taskelements { get; set; }
+        TaskElement currentElement { get; set; }
+
         public Presenter()
         {
             containerPartContentController = new ContainerPartContentController();
@@ -28,36 +28,56 @@ namespace TallboyBLL.Presenter
             taskElementController = new TaskElementController();
             typeController = new TypeController();
             taskController = new TaskController();
+            var s= GetContainerParts("sad");
         }
 
         public void Start()
         {
-            List<TallboyBLL.Models.Task> tasks = taskController.GetTasksAsync().Result;
+            taskController.GetTasksAsync(GetTasksCallback);
+        }
+
+        public void GetTasksCallback(List<TallboyBLL.Models.Task> tasks)
+        {
             if(tasks != null)
             {
                 task = tasks[0];
                 Debug.WriteLine("Current taskID :" + task.Id);
-                taskelements = taskElementController.GetTaskElementsAsync(task.Id).Result;
-                if(taskelements != null)
-                {
-                    Debug.WriteLine("Taskelements downloaded, there are " + taskelements.Count + " element");
-                    taskelements.Sort(SortByOrder);
-
-                    foreach(TaskElement te in taskelements)
-                    {
-                        DoTaskElement(te);
-                    }
-                }
-                else
-                {
-                    Debug.WriteLine("There isn't any taskelement to task with ID: " + task.Id);
-                }
-                
-
-                
-
-                
+                taskElementController.GetTaskElementsAsync(GetTaskElementsCallback ,task.Id);
             }
+        }
+
+        public void GetTaskElementsCallback(List<TaskElement> elements)
+        {
+            if (elements != null)
+            {
+                taskelements = elements;
+                Debug.WriteLine("Taskelements downloaded, there are " + elements.Count + " element");
+                elements.Sort(SortByOrder);
+            }
+        }
+
+        public List<ContainerPart> GetContainerParts(string uuid)
+        {
+            //containerPartController.GetContainerPartAsync(GetContainerPartsCallback, 1);
+            List<ContainerPart> list = new List<ContainerPart> {
+                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 12, Width= 100 },
+                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 13, Height= 12, Width= 45 },
+                new ContainerPart{ Id=3, XCoordinate= 50, YCoordinate= 13, Height= 12, Width= 15 },
+                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 26, Height= 10, Width= 10 },
+                new ContainerPart{ Id=5, XCoordinate= 12, YCoordinate= 26, Height= 10, Width= 10 },
+                new ContainerPart{ Id=6, XCoordinate= 24, YCoordinate= 26, Height= 10, Width= 10 },
+                new ContainerPart{ Id=7, XCoordinate= 36, YCoordinate= 26, Height= 10, Width= 10 },
+                new ContainerPart{ Id=8, XCoordinate= 48, YCoordinate= 26, Height= 10, Width= 10 },
+                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 40, Height= 30, Width= 100 }
+                };
+
+            return list;
+
+        }
+
+        public void GetContainerPartsCallback(List<ContainerPart> list)
+        {
+
         }
 
         public void DoTaskElement(TaskElement element)
