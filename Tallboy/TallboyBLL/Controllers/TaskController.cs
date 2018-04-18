@@ -9,9 +9,9 @@ using TallboyBLL.Models;
 
 namespace TallboyBLL.Controllers
 {
-    class TaskController
+    public class TaskController
     {
-        private const string actionName = "tasks";
+        private const string actionName = "task";
 
         public TaskController()
         {

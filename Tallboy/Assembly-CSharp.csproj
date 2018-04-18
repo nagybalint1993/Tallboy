@@ -51,8 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Cube.cs" />
-     <Compile Include="Assets\Scripts\ImageFoundEvent.cs" />
+     <Compile Include="Assets\Scripts\ContainerPartMesh.cs" />
      <Compile Include="Assets\Scripts\ImageTargetManager.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />

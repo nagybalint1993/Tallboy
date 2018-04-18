@@ -20,7 +20,7 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
     GameObject descriptionTextField;
     string targetName;
     Presenter presenter;
-
+    public Transform containerPart;
 
     // Use this for initialization
     void Start () {
@@ -35,6 +35,8 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         initTime = false;
 
         presenter = new Presenter();
+        TaskController tc = new TaskController();
+        tc.GetTasksAsync(GetTasks);
     }
 	
 	// Update is called once per frame
@@ -95,37 +97,74 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         }
     }
 
+    
+
     public void AddCubesToImageTarget(string s)
     {
         //List<ContainerPart> cplist = presenter.GetContainerParts(s);
         List<ContainerPart> cplist = new List<ContainerPart> {
-                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 12, Width= 100 },
-                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 13, Height= 12, Width= 45 },
-                new ContainerPart{ Id=3, XCoordinate= 50, YCoordinate= 13, Height= 12, Width= 15 },
-                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=5, XCoordinate= 12, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=6, XCoordinate= 24, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=7, XCoordinate= 36, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=8, XCoordinate= 48, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 40, Height= 30, Width= 100 }
+                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 55, Width= 270 },
+                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 66, Height= 55, Width= 130 },
+                new ContainerPart{ Id=3, XCoordinate= 140, YCoordinate= 66, Height= 55, Width= 130 },
+                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=5, XCoordinate= 55, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=6, XCoordinate= 110, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=7, XCoordinate= 165, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=8, XCoordinate= 220, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=10, XCoordinate= 55, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=11, XCoordinate= 110, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=12, XCoordinate= 165, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=13, XCoordinate= 220, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=14, XCoordinate= 0, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=15, XCoordinate= 55, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=16, XCoordinate= 110, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=17, XCoordinate= 165, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=18, XCoordinate= 220, YCoordinate= 240, Height= 35, Width= 45 },
                 };
         GameObject gameObject = GameObject.Find(s);
+
+
         
-        
+
         foreach (ContainerPart cp in cplist)
         {
-            GameObject cube = new GameObject("ContainerPartMesh"); //GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.parent = gameObject.transform;
-            cube.transform.position = gameObject.transform.position + new Vector3(cp.XCoordinate *5 ,0, cp.YCoordinate *5 );
-            cube.transform.localScale = new Vector3(0.1f * cp.Width, 0.01f, 0.1f *cp.Height);
-            cube.SetActive(true);
+            //change 46 to container.QRsize which is the size of the printed QRcode in the real world given in mm 
+            var qrSize = 46.0f;
+            float width = cp.Width / qrSize * gameObject.transform.localScale.x;
+            float height = cp.Height / qrSize * gameObject.transform.localScale.z;
+
+            float x= cp.XCoordinate / qrSize * gameObject.transform.localScale.x;
+            float y= cp.YCoordinate / qrSize * gameObject.transform.localScale.z;
+
+            //
+            float transformX = x + (width/ 2) - gameObject.transform.localScale.x/2;
+            float transformY= y + (height/ 2) - gameObject.transform.localScale.x / 2;
+
+            //create cube with the given transform coordinates
+            Transform transform = Instantiate(containerPart, new Vector3(transformX,-2,transformY), Quaternion.identity);  //GameObject.CreatePrimitive(PrimitiveType.Cube);
+            
+            Debug.Log("x scale: " + transform.localScale.x);
+            Debug.Log("width : " + width);
+            Debug.Log("heigh: " + height);
+
+            //Set the scale of the cube
+            transform.localScale = new Vector3(width, 5.0f  ,height);
+            transform.Rotate(new Vector3(5, 0, 0));
             
         }
     }
 
-    private void GetTasks()
+    private void GetTasks(List<TallboyBLL.Models.Task> tasks)
     {
-        
+        if(tasks!= null)
+        {
+            UpdateDescriptionTextField(tasks[0].Name + "\n" + tasks[0].Description);
+        }
+        else
+        {
+            UpdateDescriptionTextField("no task");
+        }
     }
 
     private string GetDescription()

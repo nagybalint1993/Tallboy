@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using TallboyBLL;
 using TallboyBLL.Controllers;
@@ -15,11 +16,10 @@ namespace HelperProject
     {
         static void Main(string[] args)
         {
-            
-            Presenter presenter = new Presenter();
-            presenter.Start();
 
-            
+            List< TallboyBLL.Models.Task > list = new TaskController().GetTasksAsync(GetTask).Result;
+
+            GetTask(list);
 
             /*
             TypeController typeController = new TypeController();
@@ -58,6 +58,14 @@ namespace HelperProject
             //Debug.WriteLine(interactor.description);
             //Debug.WriteLine(interactor.currentType.Name);
             //Debug.WriteLine(interactor.currentType.Description);
+        }
+
+        public static void GetTask(List<TallboyBLL.Models.Task> list)
+        {
+            foreach(TallboyBLL.Models.Task t in list)
+            {
+                Debug.Write(list[0].Name + "\n" + list[0].Description);
+            }
         }
     }
 }
