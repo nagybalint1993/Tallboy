@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TallboyBLL.Controllers;
 using TallboyBLL.Models;
+using TallboyBLL.TestData;
 
 namespace TallboyBLL.Presenter
 {
@@ -18,8 +19,14 @@ namespace TallboyBLL.Presenter
         TaskController taskController;
 
         TallboyBLL.Models.Task task { get; set; }
+        public bool taskReady { get; set; }
+        public bool taskelementReady { get; set; }
         List<TaskElement> taskelements { get; set; }
-        TaskElement currentElement { get; set; }
+        int currentElement { get; set; }
+
+
+        //TEST
+        Data testdata;
 
         public Presenter()
         {
@@ -33,6 +40,7 @@ namespace TallboyBLL.Presenter
 
         public void Start()
         {
+            testdata = new Data();
             taskController.GetTasksAsync(GetTasksCallback);
         }
 
@@ -53,26 +61,34 @@ namespace TallboyBLL.Presenter
                 taskelements = elements;
                 Debug.WriteLine("Taskelements downloaded, there are " + elements.Count + " element");
                 elements.Sort(SortByOrder);
+                currentElement = 0;
             }
         }
 
         public List<ContainerPart> GetContainerParts(string uuid)
         {
             //containerPartController.GetContainerPartAsync(GetContainerPartsCallback, 1);
-            List<ContainerPart> list = new List<ContainerPart> {
-                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 12, Width= 100 },
-                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 13, Height= 12, Width= 45 },
-                new ContainerPart{ Id=3, XCoordinate= 50, YCoordinate= 13, Height= 12, Width= 15 },
-                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=5, XCoordinate= 12, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=6, XCoordinate= 24, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=7, XCoordinate= 36, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=8, XCoordinate= 48, YCoordinate= 26, Height= 10, Width= 10 },
-                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 40, Height= 30, Width= 100 }
+            List<ContainerPart> cplist = new List<ContainerPart> {
+                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 55, Width= 270 },
+                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 66, Height= 55, Width= 130 },
+                new ContainerPart{ Id=3, XCoordinate= 140, YCoordinate= 66, Height= 55, Width= 130 },
+                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=5, XCoordinate= 55, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=6, XCoordinate= 110, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=7, XCoordinate= 165, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=8, XCoordinate= 220, YCoordinate= 130, Height= 35, Width= 45 },
+                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=10, XCoordinate= 55, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=11, XCoordinate= 110, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=12, XCoordinate= 165, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=13, XCoordinate= 220, YCoordinate= 185, Height= 35, Width= 45 },
+                new ContainerPart{ Id=14, XCoordinate= 0, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=15, XCoordinate= 55, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=16, XCoordinate= 110, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=17, XCoordinate= 165, YCoordinate= 240, Height= 35, Width= 45 },
+                new ContainerPart{ Id=18, XCoordinate= 220, YCoordinate= 240, Height= 35, Width= 45 },
                 };
-
-            return list;
-
+            return cplist;
         }
 
         public void GetContainerPartsCallback(List<ContainerPart> list)

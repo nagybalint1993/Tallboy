@@ -10,20 +10,20 @@ using TallboyBLL.Controllers;
 using TallboyBLL.Presenter;
 
 public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
-    GameObject[] cubes;
-    int count;
-    int cubeNumber;
     private TrackableBehaviour mTrackableBehaviour;
-    bool tracked;
-    bool initTime;
+    Presenter presenter;
+
     GameObject titleTextField;
     GameObject descriptionTextField;
+
+    bool tracked;
     string targetName;
-    Presenter presenter;
+    
     public Transform containerPart;
 
     // Use this for initialization
     void Start () {
+
         mTrackableBehaviour = GetComponent<ImageTargetBehaviour>();
         if (mTrackableBehaviour)
         {
@@ -32,68 +32,26 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
 
         titleTextField = GameObject.Find("Title");
         descriptionTextField = GameObject.Find("Description");
-        initTime = false;
-
         presenter = new Presenter();
-        TaskController tc = new TaskController();
-        tc.GetTasksAsync(GetTasks);
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (tracked)
         {
-        //    if (initTime) {
-        //        count++;
-        //        if (count >= 150)
-        //        {
-        //            foreach (GameObject o in cubes)
-        //            {
-        //                o.SetActive(false);
-        //            }
-        //            initTime = false;
-        //            count = 0;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        UpdateDescriptionTextField(GetDescription());
-        //        count++;
-        //        if (count >= 30)
-        //        {
-                    
-                    
-        //        }
-        //    }
+
         }
         
 	}
-
-    private void ChangeCubeActive(int id)
-    {
-        if(cubes != null)
-        {
-            cubes[id].SetActive(!cubes[id].active);
-        }
-        
-    }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
         if(newStatus == TrackableBehaviour.Status.TRACKED && !tracked)
         {
             targetName = mTrackableBehaviour.name;
-            count = 0;
-            cubeNumber = 0;
             Debug.Log("targetName: "+ mTrackableBehaviour.TrackableName);
             Debug.Log("name: "+ mTrackableBehaviour.name);
             AddCubesToImageTarget(targetName);
-            /*
-            cubes[0].SetActive(true);
-            UpdateTitleTextField("Fiok " + (cubeNumber + 1).ToString());
-            tracked = true;
-            initTime = true;
-            GetTasks();*/
         }
     }
 
@@ -101,31 +59,8 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
 
     public void AddCubesToImageTarget(string s)
     {
-        //List<ContainerPart> cplist = presenter.GetContainerParts(s);
-        List<ContainerPart> cplist = new List<ContainerPart> {
-                new ContainerPart{ Id=1, XCoordinate= 0, YCoordinate= 0, Height= 55, Width= 270 },
-                new ContainerPart{ Id=2, XCoordinate= 0, YCoordinate= 66, Height= 55, Width= 130 },
-                new ContainerPart{ Id=3, XCoordinate= 140, YCoordinate= 66, Height= 55, Width= 130 },
-                new ContainerPart{ Id=4, XCoordinate= 0, YCoordinate= 130, Height= 35, Width= 45 },
-                new ContainerPart{ Id=5, XCoordinate= 55, YCoordinate= 130, Height= 35, Width= 45 },
-                new ContainerPart{ Id=6, XCoordinate= 110, YCoordinate= 130, Height= 35, Width= 45 },
-                new ContainerPart{ Id=7, XCoordinate= 165, YCoordinate= 130, Height= 35, Width= 45 },
-                new ContainerPart{ Id=8, XCoordinate= 220, YCoordinate= 130, Height= 35, Width= 45 },
-                new ContainerPart{ Id=9, XCoordinate= 0, YCoordinate= 185, Height= 35, Width= 45 },
-                new ContainerPart{ Id=10, XCoordinate= 55, YCoordinate= 185, Height= 35, Width= 45 },
-                new ContainerPart{ Id=11, XCoordinate= 110, YCoordinate= 185, Height= 35, Width= 45 },
-                new ContainerPart{ Id=12, XCoordinate= 165, YCoordinate= 185, Height= 35, Width= 45 },
-                new ContainerPart{ Id=13, XCoordinate= 220, YCoordinate= 185, Height= 35, Width= 45 },
-                new ContainerPart{ Id=14, XCoordinate= 0, YCoordinate= 240, Height= 35, Width= 45 },
-                new ContainerPart{ Id=15, XCoordinate= 55, YCoordinate= 240, Height= 35, Width= 45 },
-                new ContainerPart{ Id=16, XCoordinate= 110, YCoordinate= 240, Height= 35, Width= 45 },
-                new ContainerPart{ Id=17, XCoordinate= 165, YCoordinate= 240, Height= 35, Width= 45 },
-                new ContainerPart{ Id=18, XCoordinate= 220, YCoordinate= 240, Height= 35, Width= 45 },
-                };
+        List<ContainerPart> cplist = presenter.GetContainerParts(s);
         GameObject gameObject = GameObject.Find(s);
-
-
-        
 
         foreach (ContainerPart cp in cplist)
         {
@@ -150,7 +85,7 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
 
             //Set the scale of the cube
             transform.localScale = new Vector3(width, 5.0f  ,height);
-            transform.Rotate(new Vector3(5, 0, 0));
+            transform.Rotate(new Vector3(1, 0, 0));
             
         }
     }

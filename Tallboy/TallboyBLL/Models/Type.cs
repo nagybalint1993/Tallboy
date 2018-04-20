@@ -14,5 +14,7 @@ namespace TallboyBLL.Models
 
         public string Description { get; set; }
 
+        public string UUID { get; set; }
+
     }
 }
