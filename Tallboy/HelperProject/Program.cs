@@ -16,10 +16,7 @@ namespace HelperProject
     {
         static void Main(string[] args)
         {
-
-            List< TallboyBLL.Models.Task > list = new TaskController().GetTasksAsync(GetTask).Result;
-
-            GetTask(list);
+            
 
             /*
             TypeController typeController = new TypeController();
