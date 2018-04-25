@@ -51,8 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Cube.cs" />
-     <Compile Include="Assets\Scripts\ImageFoundEvent.cs" />
+     <Compile Include="Assets\Scripts\ContainerPartMesh.cs" />
      <Compile Include="Assets\Scripts\ImageTargetManager.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
@@ -61,14 +60,15 @@
      <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
-     <None Include="Assets\StreamingAssets\Vuforia\target_images.xml" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
+     <None Include="Assets\Models\Horse\SoftAlpha.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+     <None Include="Assets\StreamingAssets\Vuforia\target_images.xml" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>E:/TallBoy/git/Tallboy/Tallboy/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

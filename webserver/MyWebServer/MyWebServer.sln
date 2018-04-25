@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallboyServer", "MyWebServer\TallboyServer.csproj", "{6CA64CE4-4D78-4308-975F-D93710088EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallboyServer.BLL", "TallboyServer.BLL\TallboyServer.BLL.csproj", "{A7E4EA73-7DBE-4DA5-8C70-9C2A1E64FC98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CA64CE4-4D78-4308-975F-D93710088EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA64CE4-4D78-4308-975F-D93710088EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA64CE4-4D78-4308-975F-D93710088EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA64CE4-4D78-4308-975F-D93710088EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E4EA73-7DBE-4DA5-8C70-9C2A1E64FC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E4EA73-7DBE-4DA5-8C70-9C2A1E64FC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E4EA73-7DBE-4DA5-8C70-9C2A1E64FC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E4EA73-7DBE-4DA5-8C70-9C2A1E64FC98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E77D9531-E858-48A5-8DC5-6B9C0AD9830E}
+	EndGlobalSection
+EndGlobal

@@ -50,9 +50,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContainerPartContentController.cs" />
+    <Compile Include="Controllers\ContainerPartController.cs" />
+    <Compile Include="Controllers\TaskController.cs" />
+    <Compile Include="Controllers\TaskElementController.cs" />
+    <Compile Include="Controllers\TypeController.cs" />
     <Compile Include="Interactor.cs" />
-    <Compile Include="Models\Material.cs" />
+    <Compile Include="Models\Container.cs" />
+    <Compile Include="Models\ContainerPart.cs" />
+    <Compile Include="Models\ContainerPartContent.cs" />
+    <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\TaskElement.cs" />
+    <Compile Include="Models\Type.cs" />
+    <Compile Include="Network\NetworkSettings.cs" />
+    <Compile Include="Presenter\Presenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestData\Data.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

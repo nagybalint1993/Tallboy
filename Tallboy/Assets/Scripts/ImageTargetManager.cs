@@ -5,25 +5,25 @@ using System.Linq;
 using Vuforia;
 using System;
 using TallboyBLL;
+using TallboyBLL.Models;
+using TallboyBLL.Controllers;
+using TallboyBLL.Presenter;
 
 public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
-    GameObject[] cubes;
-    int count;
-    int cubeNumber;
     private TrackableBehaviour mTrackableBehaviour;
-    bool tracked;
-    bool initTime;
+    Presenter presenter;
+
     GameObject titleTextField;
     GameObject descriptionTextField;
-    Interactor interactor;
-    TallboyBLL.Models.Material currentMaterial;
+
+    bool tracked;
+    string targetName;
+    
+    public Transform containerPart;
 
     // Use this for initialization
     void Start () {
-        cubes = GameObject.FindGameObjectsWithTag("Cube").OrderBy(go => go.name).ToArray<GameObject>();
-        //foreach(GameObject o in cubes){
-        //    o.SetActive(false);
-        //}
+
         mTrackableBehaviour = GetComponent<ImageTargetBehaviour>();
         if (mTrackableBehaviour)
         {
@@ -32,76 +32,79 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
 
         titleTextField = GameObject.Find("Title");
         descriptionTextField = GameObject.Find("Description");
-        initTime = false;
-        interactor = new Interactor();
+        presenter = new Presenter();
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (tracked)
         {
-            if (initTime) {
-                count++;
-                if (count >= 150)
-                {
-                    foreach (GameObject o in cubes)
-                    {
-                        o.SetActive(false);
-                    }
-                    initTime = false;
-                    count = 0;
-                }
-            }
-            else
-            {
-                UpdateDescriptionTextField(GetDescription());
-                count++;
-                if (count >= 30)
-                {
-                    ChangeCubeActive(interactor.currentMaterial.LocationId);
-                    count = 0;
-                }
-            }
+
         }
         
 	}
-
-    private void ChangeCubeActive(int id)
-    {
-        cubes[id].SetActive(!cubes[id].active);
-    }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
         if(newStatus == TrackableBehaviour.Status.TRACKED && !tracked)
         {
-            count = 0;
-            cubeNumber = 0;
-            cubes[0].SetActive(true);
-            UpdateTitleTextField("Fiok " + (cubeNumber + 1).ToString());
-            tracked = true;
-            initTime = true;
-            GetTasks();
+            targetName = mTrackableBehaviour.name;
+            Debug.Log("targetName: "+ mTrackableBehaviour.TrackableName);
+            Debug.Log("name: "+ mTrackableBehaviour.name);
+            AddCubesToImageTarget(targetName);
         }
     }
 
-    private void GetTasks()
+    
+
+    public void AddCubesToImageTarget(string s)
     {
-        interactor.TryToGetTasks();
+        List<ContainerPart> cplist = presenter.GetContainerParts(s);
+        GameObject gameObject = GameObject.Find(s);
+
+        foreach (ContainerPart cp in cplist)
+        {
+            //change 46 to container.QRsize which is the size of the printed QRcode in the real world given in mm 
+            var qrSize = 46.0f;
+            float width = cp.Width / qrSize * gameObject.transform.localScale.x;
+            float height = cp.Height / qrSize * gameObject.transform.localScale.z;
+
+            float x= cp.XCoordinate / qrSize * gameObject.transform.localScale.x;
+            float y= cp.YCoordinate / qrSize * gameObject.transform.localScale.z;
+
+            //
+            float transformX = x + (width/ 2) - gameObject.transform.localScale.x/2;
+            float transformY= y + (height/ 2) - gameObject.transform.localScale.x / 2;
+
+            //create cube with the given transform coordinates
+            Transform transform = Instantiate(containerPart, new Vector3(transformX,-2,transformY), Quaternion.identity);  //GameObject.CreatePrimitive(PrimitiveType.Cube);
+            
+            Debug.Log("x scale: " + transform.localScale.x);
+            Debug.Log("width : " + width);
+            Debug.Log("heigh: " + height);
+
+            //Set the scale of the cube
+            transform.localScale = new Vector3(width, 5.0f  ,height);
+            transform.Rotate(new Vector3(1, 0, 0));
+            
+        }
+    }
+
+    private void GetTasks(List<TallboyBLL.Models.Task> tasks)
+    {
+        if(tasks!= null)
+        {
+            UpdateDescriptionTextField(tasks[0].Name + "\n" + tasks[0].Description);
+        }
+        else
+        {
+            UpdateDescriptionTextField("no task");
+        }
     }
 
     private string GetDescription()
     {
-        if (interactor.currentMaterial != null)
-        {
-            string s = interactor.currentMaterial.Name + "\n" + interactor.currentMaterial.Description;
-            return s;
-        }
-        else
-        {
-            return interactor.description;
-        }
-
+        return "";
     }
 
     public void UpdateTitleTextField(string s)
