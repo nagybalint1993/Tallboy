@@ -193,9 +193,6 @@ E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.csproj.CoreCompil
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.dll
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\obj\Debug\TallboyBLL.pdb
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL\bin\Debug\Newtonsoft.Json.dll
-E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.csproj.CoreCompileInputs.cache
-E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.dll
-E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.pdb
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\TallboyBLL.dll
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\TallboyBLL.pdb
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\Newtonsoft.Json.dll
@@ -206,4 +203,7 @@ E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\WinRTLegacy.dll
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\UnityEngine.ParticleSystemModule.pdb
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\UnityEngine.SharedInternalsModule.pdb
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\bin\Debug\UnityEngine.CoreModule.pdb
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.csproj.CoreCompileInputs.cache
 E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.csproj.CopyComplete
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.dll
+E:\TallBoy\git\Tallboy\Tallboy\TallboyBLL.NET3.5\obj\Debug\TallboyBLL.pdb

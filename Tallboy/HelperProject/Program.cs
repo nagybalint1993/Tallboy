@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using TallboyBLL;
-using TallboyBLL.Controllers;
-using TallboyBLL.Models;
 using TallboyBLL.Presenter;
 
 namespace HelperProject
@@ -16,7 +9,29 @@ namespace HelperProject
     {
         static void Main(string[] args)
         {
-            
+
+            Presenter presenter = new Presenter();
+            presenter.Start();
+
+            Debug.Write("Task: " + presenter.currentTaskElement.Name);
+            Debug.Write("Description: " + presenter.currentTaskElement.Description);
+
+            presenter.TypeFound("20ede1ea-44bc-4cc9-9000-94bdc66cc5b0");
+            Debug.Write("Task: " + presenter.currentTaskElement.Name);
+            Debug.Write("Description: " + presenter.currentTaskElement.Description);
+
+            presenter.TypeFound("464d6419-d6ed-4229-9509-890cd5807f9b");
+            Debug.Write("Task: " + presenter.currentTaskElement.Name);
+            Debug.Write("Description: " + presenter.currentTaskElement.Description);
+
+            presenter.TypeFound("057d09e2-2bc7-4098-8ba0-ad428f3ddf41");
+            Debug.Write("Task: " + presenter.currentTaskElement.Name);
+            Debug.Write("Description: " + presenter.currentTaskElement.Description);
+
+            Debug.Write("Container: " + presenter.isType("20ede1ea - 44bc - 4cc9 - 9000 - 94bdc66cc5b0"));
+            Debug.Write("Type1: " + presenter.isType("057d09e2-2bc7-4098-8ba0-ad428f3ddf41"));
+            Debug.Write("Type2: " + presenter.isType("464d6419-d6ed-4229-9509-890cd5807f9b"));
+
 
             /*
             TypeController typeController = new TypeController();
@@ -57,7 +72,7 @@ namespace HelperProject
             //Debug.WriteLine(interactor.currentType.Description);
         }
 
-        public static void GetTask(List<TallboyBLL.Models.Task> list)
+            public static void GetTask(List<TallboyBLL.Models.Task> list)
         {
             foreach(TallboyBLL.Models.Task t in list)
             {

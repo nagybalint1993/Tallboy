@@ -8,5 +8,7 @@ namespace TallboyBLL.Models
     public class Container
     {
         public int Id { get; set; }
+
+        public string UUID { get; set; }
     }
 }

@@ -16,7 +16,7 @@ MonoBehaviour:
     ufoLicenseKey: QVhjcEpUSC8vLy8vQUFBQUtCY1RBeDhDUUVNR2xPcGR3RGVEQXFtTUN0STZhaTNuNmszRk9YQ0g2ZHdFUWF1MVFqQytNT2lWaThZTkRqTmpJQ0NybE9MNGJibFZHZC9TYUlQT2lVM0hCQm5mc3JvSmZmcnIzaFVKZDNseGl6aXpFYTFZMXpqMk0wT1QxMitCeWs5OGo0Tk80RnJTcEYwV1pZZG14VUdnZU52RFhyNmNqWTRGSnI3cWo3dkprRi9UZVlqTkozVnFJMVpJNm8wN2FBM0t2VEpLZjF0MDNBWDZKeXo0dGh2cVZIL2VaZ1BubnZYWGgxZTFPcy9vZGw2UWxFVTRLV2piYlF0WGZwQVNyY2JjSlRRaU0rWHdkRHlENWtFdGFST2xkSE5yMkdVRkJKSFpsVFZLY0F6dFZXT0lyQmJ5SHljU1F5eXhQVzFHai9JbGpZamJibDJKVDN6TnRDeGxFZ0JFS3JPNExPN1BIclBBTFE4eXNvRkc=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 2
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
@@ -24,9 +24,9 @@ MonoBehaviour:
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
-    eyewearType: 0
+    eyewearType: 1
     stereoFramework: 0
-    seeThroughConfiguration: 0
+    seeThroughConfiguration: 1
     viewerName: 
     viewerManufacturer: 
     useCustomViewer: 0
@@ -44,12 +44,8 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
     - target_images
     dataSetsToActivate:
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
     - target_images
   videoBackground:
     clippingMode: 0
@@ -59,9 +55,9 @@ MonoBehaviour:
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 0
-    autoStartTracker: 0
-    trackingMode: 0
+    autoInitTracker: 1
+    autoStartTracker: 1
+    trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0

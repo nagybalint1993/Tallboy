@@ -25,9 +25,9 @@ namespace TallboyBLL.Controllers
 
 
         // !!!! TODO now this method get all containerpart
-        internal void GetContainerPartAsync(Action<List<ContainerPart>> getContainerPartsCallback, int v)
+        internal void GetContainerPartAsync(Action<List<ContainerPart>, string> getContainerPartsCallback, string uuid)
         {
-            getContainerPartsCallback(new Data().ContainerPartList);
+            getContainerPartsCallback(new Data().ContainerPartList, uuid);
         }
     }
 }

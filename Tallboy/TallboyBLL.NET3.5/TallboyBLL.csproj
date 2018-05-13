@@ -58,6 +58,7 @@
     <Compile Include="Models\Container.cs" />
     <Compile Include="Models\ContainerPart.cs" />
     <Compile Include="Models\ContainerPartContent.cs" />
+    <Compile Include="Models\QRType.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Models\TaskElement.cs" />
     <Compile Include="Models\Type.cs" />

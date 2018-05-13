@@ -13,12 +13,12 @@ namespace TallboyBLL.Models
 
         public string Name { get; set; }
 
-        public int XCoordinate { get; set; }
+        public float XCoordinate { get; set; }
 
-        public int YCoordinate { get; set; }
+        public float YCoordinate { get; set; }
 
-        public int Width { get; set; }
+        public float Width { get; set; }
 
-        public int Height { get; set; }
+        public float Height { get; set; }
     }
 }

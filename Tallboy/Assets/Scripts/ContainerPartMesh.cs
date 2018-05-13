@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ContainerPartMesh : MonoBehaviour {
+public class ContainerPartMesh : MonoBehaviour{
+    Material[] materials;
+    Renderer rend;
+    public Transform transform;
+    public int ID;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public ContainerPartMesh(Transform t, int id)
+    {
+        transform = t;
+        ID = id;
+    }
+
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = materials[0];
+    }
 }

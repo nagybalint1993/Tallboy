@@ -26,8 +26,8 @@ namespace TallboyBLL.TestData
 
             taskElementList = new List<TaskElement>()
             {
-                new TaskElement(){Id= 1, Name="1. Subtask" , Description = "Open the red drawer,\nand scan the QRcode!", Order=1 , TaskId= 1, TypeId= 1},
-                new TaskElement(){Id=2, Name="2. Subtask", Description = "The first element is ready. Scan the next QRcode, which you will find in the red drawer.",TaskId=1, TypeId=2, Order=2 },
+                new TaskElement(){Id= 1, Name="1. Subtask" , Description = "Open the red drawer,\nand scan the QRcode!", Order=1 , TaskId= 1, TypeId= 2},
+                new TaskElement(){Id=2, Name="2. Subtask", Description = "The first element is ready. Scan the next QRcode, which you will find in the red drawer.",TaskId=1, TypeId=1, Order=2 },
                 new TaskElement(){Id=3, Name=" Task done", Description= " Nicely done! You find the two QRcode, so you can play!", Order=3, TaskId= 1}
             };
 
