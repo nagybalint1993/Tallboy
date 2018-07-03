@@ -5,10 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using TallboyBLL;
-using TallboyBLL.Controllers;
-using TallboyBLL.Models;
-using TallboyBLL.Presenter;
+
 
 namespace HelperProject
 {
@@ -57,12 +54,6 @@ namespace HelperProject
             //Debug.WriteLine(interactor.currentType.Description);
         }
 
-        public static void GetTask(List<TallboyBLL.Models.Task> list)
-        {
-            foreach(TallboyBLL.Models.Task t in list)
-            {
-                Debug.Write(list[0].Name + "\n" + list[0].Description);
-            }
-        }
+
     }
 }

@@ -8,3 +8,12 @@ E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csproj.Core
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.exe
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.pdb
 E:\TallBoy\git\Tallboy\Tallboy\HelperProject\bin\Debug\Newtonsoft.Json.dll
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csprojAssemblyReference.cache
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csproj.CoreCompileInputs.cache
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.exe
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.pdb
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.exe.config
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.exe
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\bin\Debug\HelperProject.pdb
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\bin\Debug\Newtonsoft.Json.dll
+F:\Tallboy\Tallboy\Tallboy\Tallboy\HelperProject\obj\Debug\HelperProject.csproj.CopyComplete
