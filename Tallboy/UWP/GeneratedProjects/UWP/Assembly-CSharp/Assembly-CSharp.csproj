@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{6abe4d2d-e108-48b8-b611-99df49528d33}</ProjectGuid>
+    <ProjectGuid>{cd6bbd2f-8741-4f77-b1d1-41e54875bb80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -1798,6 +1798,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\ImageTargetManager.cs">
       <Link>Scripts\ImageTargetManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\TypeImageTarget.cs">
+      <Link>Scripts\TypeImageTarget.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs">
       <Link>Vuforia\Scripts\DefaultInitializationErrorHandler.cs</Link>

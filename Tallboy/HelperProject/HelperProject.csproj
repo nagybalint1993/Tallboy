@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>HelperProject</RootNamespace>
     <AssemblyName>HelperProject</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -53,7 +53,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TallboyBLL\TallboyBLL.csproj">
+    <ProjectReference Include="..\TallboyBLL.NET3.5\TallboyBLL.csproj">
       <Project>{79f0bd8e-9158-4947-8e4d-f1544222dc44}</Project>
       <Name>TallboyBLL</Name>
     </ProjectReference>

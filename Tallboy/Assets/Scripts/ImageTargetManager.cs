@@ -11,19 +11,25 @@ using TallboyBLL.Presenter;
 
 public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
     private TrackableBehaviour mTrackableBehaviour;
-    Presenter presenter;
+    public Presenter presenter;
     List<string> imageTargets;
 
     GameObject titleTextField;
     GameObject descriptionTextField;
+    GameObject taskTitleTextField;
+    GameObject taskDescriptionTextField;
 
     bool tracked;
     string targetName;
 
     ContainerPart currentContainerPart;
+    public Material red;
+    public Material green;
     
     public Transform containerPart;
-    List<ContainerPartMesh> containerPartMeshes;
+    Dictionary<int, Renderer> containerPartMeshes;
+
+    GameObject parent;
 
     // Use this for initialization
     void Start () {
@@ -35,10 +41,12 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         tracked = false;
         titleTextField = GameObject.Find("Title");
         descriptionTextField = GameObject.Find("Description");
-        presenter = new Presenter();
+        taskTitleTextField = GameObject.Find("TaskTitle");
+        taskDescriptionTextField = GameObject.Find("TaskDescription");
+        presenter = Presenter.GetPresenter();
         presenter.Start();
         imageTargets = new List<String>();
-        containerPartMeshes = new List<ContainerPartMesh>();
+        containerPartMeshes = new Dictionary<int, Renderer>();
     }
 	
 	// Update is called once per frame
@@ -46,14 +54,17 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         
         if (tracked)
         {
-            UpdateDescriptionTextField(presenter.currentTaskElement.Description);
-            UpdateTitleTextField(presenter.currentTaskElement.Name);
-
             if (presenter.containerPartChanged)
             {
+                UpdateDescriptionTextField(presenter.currentTaskElement.Description);
+                UpdateTitleTextField(presenter.currentTaskElement.Name);
+                if (currentContainerPart != null)
+                {
+                    containerPartMeshes[currentContainerPart.Id].material = green;
+                }
                 currentContainerPart = presenter.currentContainerPart;
-                containerPartMeshes.Where(cp => cp.ID == currentContainerPart.Id).FirstOrDefault();
-                
+                containerPartMeshes[currentContainerPart.Id].material = red;
+                presenter.containerPartChanged = false;
             }
         }
 
@@ -70,10 +81,13 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
             AddCubesToImageTarget(targetName);
             presenter.TypeFound(targetName);
             tracked = true;
+            taskTitleTextField.GetComponent<TextMesh>().text = presenter.currentTask.Name;
+            taskDescriptionTextField.GetComponent<TextMesh>().text = presenter.currentTask.Description;
         }
         if(newStatus == TrackableBehaviour.Status.TRACKED)
         {
-            presenter.TypeFound(targetName);
+            Debug.Log("targetName: " + mTrackableBehaviour.TrackableName);
+            Debug.Log("name: " + mTrackableBehaviour.name);
         }
     }
 
@@ -89,7 +103,7 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         
             var qrSize = imageTargetObject.transform.localScale.x;
 
-            GameObject parent = new GameObject("parent");
+            parent = new GameObject("parent");
             parent.transform.parent = imageTargetObject.transform;
             parent.transform.localPosition = Vector3.zero;
             parent.transform.localRotation = Quaternion.identity;
@@ -112,16 +126,13 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
                 //create cube with the given transform coordinates
                 Transform transform2 = Instantiate(containerPart, newPos, Quaternion.identity);  //GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-              //  transform2.up = parent.transform.forward;
+                //  transform2.up = parent.transform.forward;
                 transform2.SetParent(parent.transform);
                 transform2.localRotation = Quaternion.Euler(90f,0f,0f);
-
                 // transform2.localRotation = Quaternion.identity;
                 // transform2.localPosition = new Vector3(transformX, transformY, 0);
 
                 //transform2.GetComponent<Renderer>().material
-
-
                 //Debug.Log("Containerpart ID: " + cp.Id + " created");
                 //Debug.Log("width : " + width);
                 //Debug.Log("heigh: " + height);
@@ -131,23 +142,26 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
                 //transform.Rotate(new Vector3(1, 0, 0));
 
                 //add to ContainerPartMesh
-                containerPartMeshes.Add(new ContainerPartMesh(transform2, cp.Id));
+                containerPartMeshes.Add(cp.Id, transform2.GetComponent<Renderer>());
+                presenter.containerPartChanged= true;
             }
-        }
+            titleTextField.transform.parent = parent.transform;       
+            titleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            titleTextField.transform.localPosition = new Vector3(-3f, 0, 2.4f);
 
+            descriptionTextField.transform.parent = parent.transform;
+            descriptionTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            descriptionTextField.transform.localPosition = new Vector3(-3.0f, 0, 2.0f);
 
+            taskDescriptionTextField.transform.parent = parent.transform;
+            taskDescriptionTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            taskDescriptionTextField.transform.localPosition = new Vector3(3.5f, 0, 2.0f);
 
-    }
+            taskTitleTextField.transform.parent = parent.transform;
+            taskTitleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            taskTitleTextField.transform.localPosition = new Vector3(3.5f, 0, 2.4f);
 
-    private void GetTasks(List<TallboyBLL.Models.Task> tasks)
-    {
-        if(tasks!= null)
-        {
-            UpdateDescriptionTextField(tasks[0].Name + "\n" + tasks[0].Description);
-        }
-        else
-        {
-            UpdateDescriptionTextField("no task");
+            parent.transform.parent = null;    
         }
     }
 

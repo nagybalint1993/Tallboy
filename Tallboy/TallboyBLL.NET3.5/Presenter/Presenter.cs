@@ -17,7 +17,7 @@ namespace TallboyBLL.Presenter
         TypeController typeController;
         TaskController taskController;
 
-        TallboyBLL.Models.Task currentTask { get; set; }
+        public TallboyBLL.Models.Task currentTask { get; set; }
         public Models.Type currentType { get; set; }
         public bool containerPartChanged { get; set; }
         public ContainerPart currentContainerPart { get; set; }
@@ -29,7 +29,9 @@ namespace TallboyBLL.Presenter
         //TEST
         Data testdata;
 
-        public Presenter()
+        private static Presenter instance;
+
+        private Presenter()
         {
             containerPartContentController = new ContainerPartContentController();
             containerPartController = new ContainerPartController();
@@ -38,6 +40,16 @@ namespace TallboyBLL.Presenter
             taskController = new TaskController();
             var s= GetContainerParts("sad");
             testdata = new Data();
+            containerPartChanged = false;
+        }
+
+        public static Presenter GetPresenter()
+        {          
+            if (instance == null)
+            {
+                instance = new Presenter();
+            }
+            return instance;       
         }
 
         public void Start()
@@ -104,8 +116,8 @@ namespace TallboyBLL.Presenter
             if (element != null)
             {
                 currentTaskElement = taskelements[currentElement];
-                Debug.WriteLine("Current taskelement:");
-                Debug.WriteLine("ID: " + element.Id + "\n Name:" + element.Name + "\n Description: " + element.Description);
+                //Debug.WriteLine("Current taskelement:");
+                //Debug.WriteLine("ID: " + element.Id + "\n Name:" + element.Name + "\n Description: " + element.Description);
                 typeController.GetTypeAsync(GetTypeAsyncCallback, element.TypeId);
             }
 
@@ -119,13 +131,20 @@ namespace TallboyBLL.Presenter
 
         private void GetTypeAsyncCallback(Models.Type type)
         {
-            Debug.WriteLine("Required type: " + type.Name + "\n" + type.Description);
-            Debug.WriteLine("+++++++++++++");
+            //Debug.WriteLine("Required type: " + type.Name + "\n" + type.Description);
+            //Debug.WriteLine("+++++++++++++");
             currentType = type;
 
             // !!!!!!!!!!!!!!!!!!! TO DO !!!!!!!!!!!!!!!!!!!!!!
             // This method get all the containerpartcontents to a type, but we need only the those which belong to our containers
-            containerPartContentController.GetContainerPartContentAsync(GetContainerPartContentCallback ,type.Id);
+            if(type != null)
+            {
+                containerPartContentController.GetContainerPartContentAsync(GetContainerPartContentCallback, type.Id);
+            }
+            else
+            {
+                containerPartChanged = true;
+            }
         }
 
         private void GetContainerPartContentCallback(List<ContainerPartContent> cpcList)

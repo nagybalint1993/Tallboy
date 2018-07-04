@@ -22,13 +22,13 @@ namespace TallboyBLL.TestData
 
         public Data()
         {
-            taskList = new List<Models.Task>() { new Models.Task() { Id= 1, Name="First process", Description="In this task you have to open\n the given container part, and\n scan the QR code inside."} };
+            taskList = new List<Models.Task>() { new Models.Task() { Id= 1, Name="First task", Description="This is a demo task. \nIn this task you have to open\n the given container parts, and\n scan the QR code inside."} };
 
             taskElementList = new List<TaskElement>()
             {
-                new TaskElement(){Id= 1, Name="1. Subtask" , Description = "Open the red drawer,\nand scan the QRcode!", Order=1 , TaskId= 1, TypeId= 2},
-                new TaskElement(){Id=2, Name="2. Subtask", Description = "The first element is ready. Scan the next QRcode, which you will find in the red drawer.",TaskId=1, TypeId=1, Order=2 },
-                new TaskElement(){Id=3, Name=" Task done", Description= " Nicely done! You find the two QRcode, so you can play!", Order=3, TaskId= 1}
+                new TaskElement(){Id= 1, Name="1. Subtask" , Description = "Open the red drawer,\nand scan the QRcode \nwhich you find in it!", Order=1 , TaskId= 1, TypeId= 2},
+                new TaskElement(){Id=2, Name="2. Subtask", Description = "The first element is ready.\n Scan the next QRcode, which\n you will find in the red drawer.",TaskId=1, TypeId=1, Order=2 },
+                new TaskElement(){Id=3, Name=" Task done", Description= " Nicely done! You found the two QRcode!", Order=3, TaskId= 1}
             };
 
             typeList = new List<Models.Type>()

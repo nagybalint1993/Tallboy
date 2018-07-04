@@ -20,4 +20,14 @@ public class ContainerPartMesh : MonoBehaviour{
         rend.enabled = true;
         rend.sharedMaterial = materials[0];
     }
+
+    public void SetMaterialToRed()
+    {
+        rend.sharedMaterial = materials[1];
+    }
+
+    public void SetMaterialToGreen()
+    {
+        rend.sharedMaterial = materials[0];
+    }
 }

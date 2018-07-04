@@ -10,7 +10,7 @@ using TallboyBLL.TestData;
 
 namespace TallboyBLL.Presenter
 {
-    public class Presenter
+    public class Presenter 
     {
         ContainerPartController containerPartController;
         ContainerPartContentController containerPartContentController;
