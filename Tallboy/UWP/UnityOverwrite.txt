@@ -8,6 +8,7 @@
 project.json: 1D02BC64BAC0D041019673A1C4C51737
 Tallboy.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
+GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Tallboy\App.cs: E12088E5C4F99F6E8B6F8CE56D188006
 Tallboy\Package.appxmanifest: modified
 Tallboy\project.json: 1D02BC64BAC0D041019673A1C4C51737

@@ -325,6 +325,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Tallboy.Plugins.csproj">
+      <Project>{590EDA83-7812-4F66-80AD-01D894523BD1}</Project>
+      <Name>Tallboy.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="Tallboy.csproj">
       <Project>{CEA029FE-2A08-11B9-FC4E-2C2AC9DED79A}</Project>
       <Name>Tallboy</Name>
@@ -470,6 +474,7 @@
     <None Include="Assets\HoloToolkit\Utilities\Scripts\GLTF\Shaders\GLTFStandard.shader" />
     <None Include="Assets\HoloToolkit\Utilities\Scripts\GLTF\Shaders\GLTFStandardInput.cginc" />
     <None Include="Assets\HoloToolkit\Utilities\Scripts\GLTF\Shaders\GLTFVertexLitCommon.cginc" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
