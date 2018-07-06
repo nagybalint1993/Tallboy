@@ -91,8 +91,6 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
         }
     }
 
-    
-
     public void AddCubesToImageTarget(string s)
     {
         Debug.Log("Generate !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -145,21 +143,37 @@ public class ImageTargetManager : MonoBehaviour, ITrackableEventHandler{
                 containerPartMeshes.Add(cp.Id, transform2.GetComponent<Renderer>());
                 presenter.containerPartChanged= true;
             }
-            titleTextField.transform.parent = parent.transform;       
-            titleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
-            titleTextField.transform.localPosition = new Vector3(-3f, 0, 2.4f);
-
-            descriptionTextField.transform.parent = parent.transform;
-            descriptionTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
-            descriptionTextField.transform.localPosition = new Vector3(-3.0f, 0, 2.0f);
+            taskTitleTextField.transform.parent = parent.transform;
+            taskTitleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            taskTitleTextField.transform.localPosition = new Vector3(-3f, 0, 2.4f);
 
             taskDescriptionTextField.transform.parent = parent.transform;
             taskDescriptionTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
-            taskDescriptionTextField.transform.localPosition = new Vector3(3.5f, 0, 2.0f);
+            taskDescriptionTextField.transform.localPosition = new Vector3(-3.0f, 0, 2.0f);
 
-            taskTitleTextField.transform.parent = parent.transform;
-            taskTitleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
-            taskTitleTextField.transform.localPosition = new Vector3(3.5f, 0, 2.4f);
+            descriptionTextField.transform.parent = parent.transform;
+            descriptionTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            descriptionTextField.transform.localPosition = new Vector3(3.5f, 0, 2.0f);
+
+            titleTextField.transform.parent = parent.transform;
+            titleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            titleTextField.transform.localPosition = new Vector3(3.5f, 0, 2.4f);
+
+            GameObject taskPlane = GameObject.Find("TaskPlane");
+            GameObject plane = GameObject.Find("Plane");
+            GameObject cylinder = GameObject.Find("Cylinder");
+
+            taskPlane.transform.parent = parent.transform;
+            taskPlane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            taskPlane.transform.localPosition = new Vector3(4.3875f, -0.125f , 1.355f);
+
+            plane.transform.parent = parent.transform;
+            plane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            plane.transform.localPosition = new Vector3(-2.425f, -0.125f , 1.355f);
+
+            cylinder.transform.parent = parent.transform;
+            cylinder.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            cylinder.transform.localPosition = new Vector3(6.325f, 2.5f, -0.345f);
 
             parent.transform.parent = null;    
         }

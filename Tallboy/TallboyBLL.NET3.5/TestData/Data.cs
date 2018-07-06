@@ -22,19 +22,24 @@ namespace TallboyBLL.TestData
 
         public Data()
         {
-            taskList = new List<Models.Task>() { new Models.Task() { Id= 1, Name="First task", Description="This is a demo task. \nIn this task you have to open\n the given container parts, and\n scan the QR code inside."} };
+            taskList = new List<Models.Task>() { new Models.Task() { Id= 1, Name= "PCB soldering", Description="***rövid leírás***"} };
 
             taskElementList = new List<TaskElement>()
             {
-                new TaskElement(){Id= 1, Name="1. Subtask" , Description = "Open the red drawer,\nand scan the QRcode \nwhich you find in it!", Order=1 , TaskId= 1, TypeId= 2},
-                new TaskElement(){Id=2, Name="2. Subtask", Description = "The first element is ready.\n Scan the next QRcode, which\n you will find in the red drawer.",TaskId=1, TypeId=1, Order=2 },
-                new TaskElement(){Id=3, Name=" Task done", Description= " Nicely done! You found the two QRcode!", Order=3, TaskId= 1}
+                new TaskElement(){Id= 1, Name="1. Board" , Description = "Open the red drawer!", Order=1 , TaskId= 1, TypeId= 1},
+                new TaskElement(){Id=2, Name="2. IC", Description = "Position the IC to the right lace",TaskId=1, TypeId=2, Order=2 },
+                new TaskElement(){Id=2, Name="3. Resistor 1", Description = "Description",TaskId=1, TypeId=3, Order=3 },
+                new TaskElement(){Id=2, Name="4. Resistor 2", Description = "Description",TaskId=1, TypeId=4, Order=4 },
+                new TaskElement(){Id=2, Name="5. Polyfuse", Description = "Description",TaskId=1, TypeId=1, Order=5 },
+                new TaskElement(){Id=2, Name="6. Capacitor", Description = "Description",TaskId=1, TypeId=1, Order=6 },
             };
 
             typeList = new List<Models.Type>()
             {
-                new Models.Type(){Id=1, Name="Rare QRcode", Description="Every QRcode store something.", UUID= "057d09e2-2bc7-4098-8ba0-ad428f3ddf41"},
-                new Models.Type(){Id=2, Name="Weird QRcode", Description="Disgusting....", UUID= "464d6419-d6ed-4229-9509-890cd5807f9b" }
+                new Models.Type(){Id=1, Name="Board", Description="-", UUID= "057d09e2-2bc7-4098-8ba0-ad428f3ddf41"},
+                new Models.Type(){Id=2, Name="IC", Description="-", UUID= "464d6419-d6ed-4229-9509-890cd5807f9b" },
+                new Models.Type(){Id=1, Name="Resistor", Description="-", UUID= "."},
+                new Models.Type(){Id=2, Name="Polyfuse", Description="-", UUID= "." }
             };
 
             containerList = new List<Container> { new Container() { Id=1} };
@@ -64,7 +69,9 @@ namespace TallboyBLL.TestData
             containerPartContentList = new List<ContainerPartContent>()
             {
                 new ContainerPartContent(){Id= 1, TypeId=1, Amount=1,ContainerPartId= 5},
-                new ContainerPartContent(){Id= 2, TypeId=2, Amount=2, ContainerPartId= 17}
+                new ContainerPartContent(){Id= 2, TypeId=2, Amount=2, ContainerPartId= 17},
+                new ContainerPartContent(){Id= 3, TypeId=3, Amount=1,ContainerPartId= 5},
+                new ContainerPartContent(){Id= 4, TypeId=4, Amount=2, ContainerPartId= 17}
             };
         }
 
