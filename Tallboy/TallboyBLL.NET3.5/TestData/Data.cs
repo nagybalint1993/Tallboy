@@ -70,8 +70,8 @@ namespace TallboyBLL.TestData
             {
                 new ContainerPartContent(){Id= 1, TypeId=1, Amount=1,ContainerPartId= 5},
                 new ContainerPartContent(){Id= 2, TypeId=2, Amount=2, ContainerPartId= 17},
-                new ContainerPartContent(){Id= 3, TypeId=3, Amount=1,ContainerPartId= 5},
-                new ContainerPartContent(){Id= 4, TypeId=4, Amount=2, ContainerPartId= 17}
+                new ContainerPartContent(){Id= 3, TypeId=3, Amount=1,ContainerPartId= 7},
+                new ContainerPartContent(){Id= 4, TypeId=4, Amount=2, ContainerPartId= 12}
             };
         }
 

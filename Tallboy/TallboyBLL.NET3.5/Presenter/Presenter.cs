@@ -25,6 +25,8 @@ namespace TallboyBLL.Presenter
         List<TaskElement> taskelements { get; set; }
         private int currentElement { get; set; }
 
+        public bool TypeIsReady { get; set; }
+
 
         //TEST
         Data testdata;
@@ -112,6 +114,7 @@ namespace TallboyBLL.Presenter
 
         public void DoTaskElement()
         {
+            TypeIsReady = false;
             var element = taskelements[currentElement];
             if (element != null)
             {
@@ -143,7 +146,7 @@ namespace TallboyBLL.Presenter
             }
             else
             {
-                containerPartChanged = true;
+                //containerPartChanged = true;
             }
         }
 
@@ -189,7 +192,8 @@ namespace TallboyBLL.Presenter
         {
             if(currentType.UUID == uuid)
             {
-                TaskElementDone();
+                TypeIsReady = true;
+                //TaskElementDone();
             }
         }
     }

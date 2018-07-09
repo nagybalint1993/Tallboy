@@ -12,7 +12,7 @@ GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 1D02BC64BAC0D04101
 Tallboy\App.cs: E12088E5C4F99F6E8B6F8CE56D188006
 Tallboy\Package.appxmanifest: 2609D5489B77759847085E0A1E53C2FD
 Tallboy\project.json: 1D02BC64BAC0D041019673A1C4C51737
-Tallboy\Tallboy.csproj: 66D247930B75119786A4A503992EBA01
+Tallboy\Tallboy.csproj: modified
 Tallboy\Tallboy.csproj.user: modified
 Tallboy\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 Tallboy\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

@@ -12,6 +12,7 @@ public class MyGameManager : MonoBehaviour {
     GameObject descriptionTextField;
     GameObject taskTitleTextField;
     GameObject taskDescriptionTextField;
+    GameObject readySphere;
 
     bool tracked;
 
@@ -36,8 +37,10 @@ public class MyGameManager : MonoBehaviour {
         presenter.Start();
 
         tracked = false;
-        titleTextField = GameObject.Find("Title");
-        descriptionTextField = GameObject.Find("Description");
+
+        readySphere = GameObject.Find("ComponentReadySphere");
+        titleTextField = GameObject.Find("SubtaskTitle");
+        descriptionTextField = GameObject.Find("SubtaskDescription");
         taskTitleTextField = GameObject.Find("TaskTitle");
         taskDescriptionTextField = GameObject.Find("TaskDescription");
         containerPartMeshes = new Dictionary<int, Renderer>();
@@ -49,10 +52,15 @@ public class MyGameManager : MonoBehaviour {
 
     private void initPCBparts()
     {
+        PCBparts.Add(0, GameObject.Find("lapka"));
         PCBparts.Add(1, GameObject.Find("IC"));
         PCBparts.Add(2, GameObject.Find("resistor1"));
+        PCBparts.Add(3, GameObject.Find("resistor2"));
+        PCBparts.Add(4, GameObject.Find("capacitor1"));
+        PCBparts.Add(5, GameObject.Find("capacitor2"));
+        PCBparts.Add(6, GameObject.Find("capacitor3"));
 
-        for(int i=1; i<PCBparts.Count+1; i++)
+        for (int i=1; i<PCBparts.Count; i++)
         {
             PCBparts[i].SetActive(false);
         }
@@ -74,17 +82,24 @@ public class MyGameManager : MonoBehaviour {
                 currentContainerPart = presenter.currentContainerPart;
                 containerPartMeshes[currentContainerPart.Id].material = red;
                 presenter.containerPartChanged = false;
+                readySphere.SendMessageUpwards("SetMaterial", 0, SendMessageOptions.DontRequireReceiver);
+            }
+            if (presenter.TypeIsReady)
+            {
+                readySphere.SendMessageUpwards("SetMaterial", 1, SendMessageOptions.DontRequireReceiver);
             }
         }
+        /*
         testcounter++;
         if(testcounter > 200)
         {
             OnNextButtonPressed();
             testcounter = 0;
         }
+        */
     }
 
-    void OnNextButtonPressed()
+    public void OnNextButtonPressed()
     {
         presenter.TaskElementDone();
 
@@ -98,9 +113,14 @@ public class MyGameManager : MonoBehaviour {
         {
             PCBparts[currentElement].SetActive(true);
             PCBparts[currentElement].SendMessageUpwards("StartMove", SendMessageOptions.DontRequireReceiver);
-        }   
+        }
+        
     }
 
+    public void OnBackButtonPressed()
+    {
+
+    }
         public void UpdateTitleTextField(string s)
     {
         titleTextField.GetComponent<TextMesh>().text = s;
@@ -176,6 +196,7 @@ public class MyGameManager : MonoBehaviour {
                 containerPartMeshes.Add(cp.Id, transform2.GetComponent<Renderer>());
                 presenter.containerPartChanged = true;
             }
+            /*
             taskTitleTextField.transform.parent = parent.transform;
             taskTitleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
             taskTitleTextField.transform.localPosition = new Vector3(-3f, 0, 2.4f);
@@ -191,18 +212,18 @@ public class MyGameManager : MonoBehaviour {
             titleTextField.transform.parent = parent.transform;
             titleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
             titleTextField.transform.localPosition = new Vector3(3.5f, 0, 2.4f);
-
+            */
             GameObject taskPlane = GameObject.Find("TaskPlane");
-            GameObject plane = GameObject.Find("Plane");
+            GameObject subtaskPlane = GameObject.Find("SubtaskPlane");
             GameObject cylinder = GameObject.Find("Cylinder");
+
+            subtaskPlane.transform.parent = parent.transform;
+            subtaskPlane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            subtaskPlane.transform.localPosition = new Vector3(4.3875f, -0.125f, 0);
 
             taskPlane.transform.parent = parent.transform;
             taskPlane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-            taskPlane.transform.localPosition = new Vector3(4.3875f, -0.125f, 1.355f);
-
-            plane.transform.parent = parent.transform;
-            plane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-            plane.transform.localPosition = new Vector3(-2.425f, -0.125f, 1.355f);
+            taskPlane.transform.localPosition = new Vector3(-2.425f, -0.125f, 0);
 
             cylinder.transform.parent = parent.transform;
             cylinder.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);

@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{e009bc75-8e4c-4234-930c-17cd16a4bed4}</ProjectGuid>
+    <ProjectGuid>{23109386-ca4f-4461-92c9-cc1c911e4034}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Tallboy\Tallboy\Tallboy\Tallboy\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{4ed2abb8-4e67-49e8-9055-e4346c4b5577}</Project>
+      <Project>{5e74a4f7-0f27-46d0-ac97-2cee97cc253d}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.TextRenderingModule">
@@ -1797,8 +1797,14 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs">
       <Link>HoloToolkit\UX\Scripts\UsabilityUtilities.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\ComponentReadySphere.cs">
+      <Link>Scripts\ComponentReadySphere.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\ContainerPartMesh.cs">
       <Link>Scripts\ContainerPartMesh.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\GameObjectMover.cs">
+      <Link>Scripts\GameObjectMover.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\ImageTargetManager.cs">
       <Link>Scripts\ImageTargetManager.cs</Link>
@@ -1808,9 +1814,6 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\NextButtonManager.cs">
       <Link>Scripts\NextButtonManager.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\ResistorMover.cs">
-      <Link>Scripts\ResistorMover.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\TaskMenuManager.cs">
       <Link>Scripts\TaskMenuManager.cs</Link>
