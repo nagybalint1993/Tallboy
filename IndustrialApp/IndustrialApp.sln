@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialApp", "IndustrialApp.csproj", "{75FC820E-1B7D-B2A8-253B-21E036509C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialApp.Plugins", "IndustrialApp.Plugins.csproj", "{32F2740B-881E-6F35-8E8B-8081D4AC55DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndustrialApp.Editor", "IndustrialApp.Editor.csproj", "{E5C0E3F7-5267-B358-9B18-7E1AB9B0E558}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75FC820E-1B7D-B2A8-253B-21E036509C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FC820E-1B7D-B2A8-253B-21E036509C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FC820E-1B7D-B2A8-253B-21E036509C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FC820E-1B7D-B2A8-253B-21E036509C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F2740B-881E-6F35-8E8B-8081D4AC55DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F2740B-881E-6F35-8E8B-8081D4AC55DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F2740B-881E-6F35-8E8B-8081D4AC55DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F2740B-881E-6F35-8E8B-8081D4AC55DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C0E3F7-5267-B358-9B18-7E1AB9B0E558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C0E3F7-5267-B358-9B18-7E1AB9B0E558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C0E3F7-5267-B358-9B18-7E1AB9B0E558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C0E3F7-5267-B358-9B18-7E1AB9B0E558}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
