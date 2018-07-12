@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{c1c870da-99fe-47c5-8a01-8bbeb077c377}</ProjectGuid>
+    <ProjectGuid>{04cd389d-cb0e-4d85-ab16-deec18004c07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{ceda3215-59e3-4681-ab7e-10e79621085c}</Project>
+      <Project>{b510002d-6f49-452d-a930-ffe783d6a969}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.TextRenderingModule">
@@ -2645,6 +2645,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\ImageTargetManager.cs">
       <Link>Scripts\ImageTargetManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Menu\MenuController.cs">
+      <Link>Scripts\Menu\MenuController.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\MyGameManager.cs">
       <Link>Scripts\MyGameManager.cs</Link>

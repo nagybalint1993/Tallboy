@@ -10,7 +10,7 @@ project.json: 1D02BC64BAC0D041019673A1C4C51737
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 1D02BC64BAC0D041019673A1C4C51737
 IndustialApp\App.cs: 636106BBF6A43A32774B7D174D388E37
-IndustialApp\IndustialApp.csproj: DC38A40672600C2EBA9A32663443F79F
+IndustialApp\IndustialApp.csproj: modified
 IndustialApp\IndustialApp.csproj.user: modified
 IndustialApp\Package.appxmanifest: E2070FB0417278CEA8AAF50CE71380AE
 IndustialApp\project.json: 1D02BC64BAC0D041019673A1C4C51737

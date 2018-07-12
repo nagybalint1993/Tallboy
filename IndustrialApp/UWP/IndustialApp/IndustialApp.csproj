@@ -371,12 +371,12 @@
 
   <ItemGroup>
     <ProjectReference Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{c1c870da-99fe-47c5-8a01-8bbeb077c377}</Project>
+      <Project>{9902ec97-6ff5-479f-9853-a0de18481d02}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{ceda3215-59e3-4681-ab7e-10e79621085c}</Project>
+      <Project>{4c219e59-fe65-4ebd-a289-72b14e10b36a}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>

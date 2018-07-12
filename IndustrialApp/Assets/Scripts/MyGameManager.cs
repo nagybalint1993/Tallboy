@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using IndustrialApp.Models;
 using IndustrialApp.Presenter;
 using UnityEngine;
+using Vuforia;
 
 public class MyGameManager : MonoBehaviour {
     Presenter presenter;
@@ -16,11 +17,15 @@ public class MyGameManager : MonoBehaviour {
     GameObject qrScanDialog;
     GameObject componentReadyParent;
 
+
     bool tracked;
+    bool materialChanged;
 
     ContainerPart currentContainerPart;
+
     public Material red;
     public Material green;
+    public AudioSource audioSource;
 
     public Transform containerPart;
     Dictionary<int, Renderer> containerPartMeshes;
@@ -39,6 +44,7 @@ public class MyGameManager : MonoBehaviour {
         presenter.Start();
 
         tracked = false;
+        materialChanged = false;
 
         componentReadyParent = GameObject.Find("ComponentReadyParent");
         readySphere = GameObject.Find("ReadyRadialButton");
@@ -51,6 +57,9 @@ public class MyGameManager : MonoBehaviour {
         qrScanDialog = GameObject.Find("QRScanDialog");
         qrScanDialog.SetActive(false);
         initPCBparts();
+
+        VuforiaBehaviour.Instance.enabled = true;
+        TrackerManager.Instance.GetTracker<ObjectTracker>().Start();
 
         testcounter = 0;
     }
@@ -79,10 +88,14 @@ public class MyGameManager : MonoBehaviour {
             if (presenter.containerPartChanged)
             {
                 OnContainerPartChanged();
+                materialChanged = false;
             }
-            if (presenter.TypeIsReady)
+            if (presenter.TypeIsReady && !materialChanged)
             {
                 readySphere.SendMessageUpwards("SetMaterial", 1, SendMessageOptions.DontRequireReceiver);
+                containerPartMeshes[currentContainerPart.Id].material = green;
+                materialChanged = true;
+                audioSource.Play();
             }
         }
         
@@ -111,11 +124,11 @@ public class MyGameManager : MonoBehaviour {
         readySphere.SendMessageUpwards("SetMaterial", 0, SendMessageOptions.DontRequireReceiver);
         if(presenter.currentTaskElement.TypeId != 0)
         {
-            componentReadyParent.SetActive(true);
+            componentReadyParent.transform.localScale= new Vector3(1, 1, 1);
         }
         else
         {
-            componentReadyParent.SetActive(false);
+            componentReadyParent.transform.localScale = new Vector3(0, 0, 0);
             presenter.TypeIsReady = true;
         }
     }
@@ -136,7 +149,6 @@ public class MyGameManager : MonoBehaviour {
     {
         if (presenter.TypeIsReady)
         {
-            presenter.TaskElementDone();
 
             if (PCBparts.ContainsKey(currentElement))
             {
@@ -153,6 +165,7 @@ public class MyGameManager : MonoBehaviour {
                     PCBparts[currentElement].SendMessageUpwards("StartMove", SendMessageOptions.DontRequireReceiver);
                 }
             }
+            presenter.TaskElementDone();
         }
         else
         {
@@ -165,7 +178,7 @@ public class MyGameManager : MonoBehaviour {
     {
         presenter.DoPreviousTaskElement();
     }
-        public void UpdateTitleTextField(string s)
+    public void UpdateTitleTextField(string s)
     {
         titleTextField.GetComponent<TextMesh>().text = s;
     }
@@ -199,7 +212,7 @@ public class MyGameManager : MonoBehaviour {
     public void OnContainerFound(string targetName)
     {
         taskTitleTextField.GetComponent<TextMesh>().text = presenter.currentTask.Name;
-        taskDescriptionTextField.GetComponent<TextMesh>().text = presenter.currentTask.Description;
+        taskDescriptionTextField.GetComponent<TextMesh>().text = SplitStringToLength( presenter.currentTask.Description, 30);
         AddCubesToImageTarget(targetName);
         tracked = true;
     }

@@ -448,6 +448,9 @@
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level1">
+      <PackagePath>Data\level1</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
@@ -463,11 +466,20 @@
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.assets">
+      <PackagePath>Data\sharedassets1.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level1.resS">
+      <PackagePath>Data\level1.resS</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.assets.resS">
+      <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
@@ -477,6 +489,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.resource">
+      <PackagePath>Data\sharedassets1.resource</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\StreamingAssets\Vuforia\target_images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\target_images.dat</PackagePath>

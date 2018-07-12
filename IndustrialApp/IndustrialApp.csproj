@@ -1008,6 +1008,7 @@
     <Compile Include="Assets\Scripts\ContainerPartMesh.cs" />
     <Compile Include="Assets\Scripts\GameObjectMover.cs" />
     <Compile Include="Assets\Scripts\ImageTargetManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\Scripts\MyGameManager.cs" />
     <Compile Include="Assets\Scripts\NextButtonManager.cs" />
     <Compile Include="Assets\Scripts\QrScanDialog.cs" />

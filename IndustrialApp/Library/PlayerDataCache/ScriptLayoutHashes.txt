@@ -1,5 +1,6 @@
 Metro
 SceneListBegin?
+Assets/MenuScene.unity
 Assets/FirstScene.unity
 SceneListEnd?
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
@@ -521,7 +522,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 a903474e1a4a0236cb1ab2f64bac5c63 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.Tests.SpatialProcessingTest
 ecce978abee70e7852a63184a5b0520d Assembly-CSharp.dll:HoloToolkit.Unity.DebugPanelControllerInfo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.ApplicationViewManager
-5d1c86338dc76ede22d01b0b08990c67 Assembly-CSharp.dll:.MyGameManager
+c4beb4bc85ff9590a316b7110fbbce24 Assembly-CSharp.dll:.MyGameManager
 5487efccb06583184c3fca5a644d0e7c Assembly-CSharp.dll:HoloToolkit.Unity.SolverHandler
 e8ba2e453aff9cf5487189ad115348c5 Assembly-CSharp.dll:HoloToolkit.Unity.UX.DistorterSphere
 4359ad7c5b190e7c5fd06955c3d79519 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.SpeechInputHandler
@@ -685,3 +686,4 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuController
