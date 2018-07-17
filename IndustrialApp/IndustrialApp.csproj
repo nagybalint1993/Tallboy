@@ -1007,6 +1007,7 @@
     <Compile Include="Assets\Scripts\ComponentReadySphere.cs" />
     <Compile Include="Assets\Scripts\ContainerPartMesh.cs" />
     <Compile Include="Assets\Scripts\GameObjectMover.cs" />
+    <Compile Include="Assets\Scripts\GameObjectMoverZ.cs" />
     <Compile Include="Assets\Scripts\ImageTargetManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\Scripts\MyGameManager.cs" />
@@ -1014,6 +1015,7 @@
     <Compile Include="Assets\Scripts\QrScanDialog.cs" />
     <Compile Include="Assets\Scripts\TaskMenuManager.cs" />
     <Compile Include="Assets\Scripts\TypeImageTarget.cs" />
+    <Compile Include="Assets\Scripts\VoiceCommandEvent.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
   </ItemGroup>

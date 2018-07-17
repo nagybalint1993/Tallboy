@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{04cd389d-cb0e-4d85-ab16-deec18004c07}</ProjectGuid>
+    <ProjectGuid>{8c2240f4-a716-4d58-a819-2a444cd4c059}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{b510002d-6f49-452d-a930-ffe783d6a969}</Project>
+      <Project>{3eb976b3-ba36-4232-b938-ae67b65eeced}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.TextRenderingModule">
@@ -2643,6 +2643,9 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\GameObjectMover.cs">
       <Link>Scripts\GameObjectMover.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\GameObjectMoverZ.cs">
+      <Link>Scripts\GameObjectMoverZ.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\ImageTargetManager.cs">
       <Link>Scripts\ImageTargetManager.cs</Link>
     </Compile>
@@ -2663,6 +2666,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\TypeImageTarget.cs">
       <Link>Scripts\TypeImageTarget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\VoiceCommandEvent.cs">
+      <Link>Scripts\VoiceCommandEvent.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs">
       <Link>Vuforia\Scripts\DefaultInitializationErrorHandler.cs</Link>

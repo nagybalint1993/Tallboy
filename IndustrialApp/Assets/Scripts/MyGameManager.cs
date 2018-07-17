@@ -16,7 +16,9 @@ public class MyGameManager : MonoBehaviour {
     GameObject readySphere;
     GameObject qrScanDialog;
     GameObject componentReadyParent;
-
+    GameObject taskPlane;
+    GameObject subtaskPlane;
+    GameObject cylinder;
 
     bool tracked;
     bool materialChanged;
@@ -46,6 +48,9 @@ public class MyGameManager : MonoBehaviour {
         tracked = false;
         materialChanged = false;
 
+        cylinder = GameObject.Find("Cylinder");
+        taskPlane = GameObject.Find("TaskPlane");
+        subtaskPlane = GameObject.Find("SubtaskPlane");
         componentReadyParent = GameObject.Find("ComponentReadyParent");
         readySphere = GameObject.Find("ReadyRadialButton");
         titleTextField = GameObject.Find("SubtaskTitle");
@@ -58,21 +63,35 @@ public class MyGameManager : MonoBehaviour {
         qrScanDialog.SetActive(false);
         initPCBparts();
 
+        SetWorldObjectsActive(false);
+
+        VuforiaRuntime.Instance.InitVuforia();
         VuforiaBehaviour.Instance.enabled = true;
-        TrackerManager.Instance.GetTracker<ObjectTracker>().Start();
+        VuforiaARController.Instance.RegisterVuforiaStartedCallback(StartObjectTracker);
+        //var objectTracker=  TrackerManager.Instance.GetTracker<ObjectTracker>();
+        //objectTracker.Start();
 
         testcounter = 0;
+
+
+    }
+
+    void StartObjectTracker()
+    {
+        ObjectTracker objectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+        objectTracker.Start();
     }
 
     private void initPCBparts()
     {
         PCBparts.Add(0, GameObject.Find("lapka"));
-        PCBparts.Add(1, GameObject.Find("IC"));
-        PCBparts.Add(2, GameObject.Find("capacitor1u"));
-        PCBparts.Add(3, GameObject.Find("resistor474"));
-        PCBparts.Add(4, GameObject.Find("polyfuse"));
-        PCBparts.Add(5, GameObject.Find("capacitor100n"));
-        PCBparts.Add(6, GameObject.Find("resistor220"));
+        PCBparts.Add(1, GameObject.Find("soic_14"));
+        PCBparts.Add(2, GameObject.Find("Highlight"));
+        PCBparts.Add(3, GameObject.Find("capacitor1u"));
+        PCBparts.Add(4, GameObject.Find("resistor474"));
+        PCBparts.Add(5, GameObject.Find("polyfuse"));
+        PCBparts.Add(6, GameObject.Find("capacitor100n"));
+        PCBparts.Add(7, GameObject.Find("resistor220"));
 
         for (int i=1; i<PCBparts.Count; i++)
         {
@@ -81,6 +100,12 @@ public class MyGameManager : MonoBehaviour {
         currentElement = 0;
     }
 
+    private void SetWorldObjectsActive(Boolean b)
+    {
+        cylinder.SetActive(b);
+        taskPlane.SetActive(b);
+        subtaskPlane.SetActive(b);
+    }
     private void Update()
     {
         if (tracked)
@@ -90,18 +115,21 @@ public class MyGameManager : MonoBehaviour {
                 OnContainerPartChanged();
                 materialChanged = false;
             }
-            if (presenter.TypeIsReady && !materialChanged)
+            if (presenter.TypeIsReady && !materialChanged )
             {
                 readySphere.SendMessageUpwards("SetMaterial", 1, SendMessageOptions.DontRequireReceiver);
                 containerPartMeshes[currentContainerPart.Id].material = green;
                 materialChanged = true;
-                audioSource.Play();
+                if(currentElement != 2 && (currentElement <8))
+                {
+                    audioSource.Play();
+                }
             }
         }
         
         /*
         testcounter++;
-        if(testcounter > 200)
+        if(testcounter > 100)
         {
             OnNextButtonPressed();
             testcounter = 0;
@@ -135,6 +163,12 @@ public class MyGameManager : MonoBehaviour {
 
     public void OnResetButtonPressed()
     {
+        GameObject cylinder = GameObject.Find("Cylinder");
+        cylinder.transform.parent = parent.transform;
+        cylinder.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
+        cylinder.transform.localPosition = new Vector3(6.325f, 2.5f, -0.345f);
+        cylinder.transform.parent = null;
+
         presenter.containerPartChanged = false;
         presenter.TypeIsReady = false;
         presenter.Start();
@@ -154,18 +188,28 @@ public class MyGameManager : MonoBehaviour {
             {
                 PCBparts[currentElement].SendMessageUpwards("StopMove", SendMessageOptions.DontRequireReceiver);
             }
+            if(currentElement == 2)
+            {
+                PCBparts[currentElement].SetActive(false);
+            }
 
+            currentElement++;
+            if (PCBparts.ContainsKey(currentElement))
+            {
+                PCBparts[currentElement].SetActive(true);
+                PCBparts[currentElement].SendMessageUpwards("StartMove", SendMessageOptions.DontRequireReceiver);
+            }
             //Aszinkronnál nem fog működni rendesen
             if(presenter.currentTaskElement.TypeId != 0)
             {
-                currentElement++;
-                if (PCBparts.ContainsKey(currentElement))
-                {
-                    PCBparts[currentElement].SetActive(true);
-                    PCBparts[currentElement].SendMessageUpwards("StartMove", SendMessageOptions.DontRequireReceiver);
-                }
+
             }
-            presenter.TaskElementDone();
+
+            if (currentElement < 10)
+            {
+                presenter.TaskElementDone();
+            }
+
         }
         else
         {
@@ -177,10 +221,12 @@ public class MyGameManager : MonoBehaviour {
     public void OnBackButtonPressed()
     {
         presenter.DoPreviousTaskElement();
+        PCBparts[currentElement].SetActive(false);
+        currentElement--;
     }
     public void UpdateTitleTextField(string s)
     {
-        titleTextField.GetComponent<TextMesh>().text = s;
+        titleTextField.GetComponent<TextMesh>().text = SplitStringToLength(s, 21);
     }
 
     public void UpdateDescriptionTextField(string s)
@@ -211,6 +257,7 @@ public class MyGameManager : MonoBehaviour {
 
     public void OnContainerFound(string targetName)
     {
+        SetWorldObjectsActive(true);
         taskTitleTextField.GetComponent<TextMesh>().text = presenter.currentTask.Name;
         taskDescriptionTextField.GetComponent<TextMesh>().text = SplitStringToLength( presenter.currentTask.Description, 30);
         AddCubesToImageTarget(targetName);
@@ -302,9 +349,7 @@ public class MyGameManager : MonoBehaviour {
             titleTextField.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
             titleTextField.transform.localPosition = new Vector3(3.5f, 0, 2.4f);
             */
-            GameObject taskPlane = GameObject.Find("TaskPlane");
-            GameObject subtaskPlane = GameObject.Find("SubtaskPlane");
-            GameObject cylinder = GameObject.Find("Cylinder");
+            
 
             subtaskPlane.transform.parent = parent.transform;
             subtaskPlane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -314,9 +359,11 @@ public class MyGameManager : MonoBehaviour {
             taskPlane.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
             taskPlane.transform.localPosition = new Vector3(-2.425f, -0.125f, 0);
 
+            
             cylinder.transform.parent = parent.transform;
             cylinder.transform.localRotation = Quaternion.Euler(90f, 0f, 0f);
             cylinder.transform.localPosition = new Vector3(6.325f, 2.5f, -0.345f);
+            cylinder.transform.parent = null;
 
             parent.transform.parent = null;
         }

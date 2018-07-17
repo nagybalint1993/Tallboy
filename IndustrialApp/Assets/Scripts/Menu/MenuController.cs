@@ -7,6 +7,8 @@ public class MenuController : MonoBehaviour {
 
     GameObject camera;
 
+    public bool followCameraMovement;
+
     public void Start()
     {
         camera = GameObject.Find("MixedRealityCamera");
@@ -18,6 +20,9 @@ public class MenuController : MonoBehaviour {
 
     private void Update()
     {
-        gameObject.transform.localPosition = camera.transform.localPosition;
+        if (followCameraMovement)
+        {
+            gameObject.transform.localPosition = camera.transform.localPosition;
+        }
     }
 }

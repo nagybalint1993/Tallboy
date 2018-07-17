@@ -31,13 +31,13 @@
     <AppXManifest Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-12T13:44:11.861</Modified>
+      <Modified>2018-07-16T18:34:45.604</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\bin\x86\Debug\IndustialApp.exe">
       <PackagePath>entrypoint\IndustialApp.exe</PackagePath>
-      <Modified>2018-07-12T13:43:46.059</Modified>
+      <Modified>2018-07-16T18:34:23.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nagy Balint Gyorgy\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-07-12T13:42:47.557</Modified>
+      <Modified>2018-07-16T18:33:04.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -587,19 +587,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-07-12T13:41:18.796</Modified>
+      <Modified>2018-07-16T18:31:50.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-07-12T13:41:17.004</Modified>
+      <Modified>2018-07-16T18:31:48.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-07-12T13:41:13.093</Modified>
+      <Modified>2018-07-16T18:31:44.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2018-07-12T13:41:13.810</Modified>
+      <Modified>2018-07-16T18:31:45.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -607,55 +607,55 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-07-12T13:41:18.791</Modified>
+      <Modified>2018-07-16T18:31:50.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-07-12T13:41:17.506</Modified>
+      <Modified>2018-07-16T18:31:48.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2018-07-12T13:41:17.526</Modified>
+      <Modified>2018-07-16T18:31:48.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-07-12T13:41:18.192</Modified>
+      <Modified>2018-07-16T18:31:49.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2018-07-12T13:41:18.332</Modified>
+      <Modified>2018-07-16T18:31:49.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-07-12T13:41:13.015</Modified>
+      <Modified>2018-07-16T18:31:44.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2018-07-12T13:41:13.800</Modified>
+      <Modified>2018-07-16T18:31:45.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-07-12T13:41:18.181</Modified>
+      <Modified>2018-07-16T18:31:49.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-      <Modified>2018-07-12T13:41:18.328</Modified>
+      <Modified>2018-07-16T18:31:49.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-07-12T13:42:47.476</Modified>
+      <Modified>2018-07-16T18:33:04.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-07-12T13:42:47.476</Modified>
+      <Modified>2018-07-16T18:33:04.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2018-07-12T13:41:18.196</Modified>
+      <Modified>2018-07-16T18:31:49.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\sharedassets1.resource">
       <PackagePath>Data\sharedassets1.resource</PackagePath>
-      <Modified>2018-07-12T13:41:18.339</Modified>
+      <Modified>2018-07-16T18:31:49.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Data\StreamingAssets\Vuforia\target_images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\target_images.dat</PackagePath>
@@ -688,247 +688,247 @@
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-12T13:43:47.167</Modified>
+      <Modified>2018-07-16T18:34:24.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.816</Modified>
+      <Modified>2018-07-16T18:34:42.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.852</Modified>
+      <Modified>2018-07-16T18:34:42.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.898</Modified>
+      <Modified>2018-07-16T18:34:42.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.937</Modified>
+      <Modified>2018-07-16T18:34:42.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.055</Modified>
+      <Modified>2018-07-16T18:34:42.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.097</Modified>
+      <Modified>2018-07-16T18:34:42.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.147</Modified>
+      <Modified>2018-07-16T18:34:42.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.193</Modified>
+      <Modified>2018-07-16T18:34:42.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.271</Modified>
+      <Modified>2018-07-16T18:34:42.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.319</Modified>
+      <Modified>2018-07-16T18:34:42.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.381</Modified>
+      <Modified>2018-07-16T18:34:42.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.463</Modified>
+      <Modified>2018-07-16T18:34:42.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.525</Modified>
+      <Modified>2018-07-16T18:34:42.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.571</Modified>
+      <Modified>2018-07-16T18:34:42.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.642</Modified>
+      <Modified>2018-07-16T18:34:42.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.693</Modified>
+      <Modified>2018-07-16T18:34:42.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.752</Modified>
+      <Modified>2018-07-16T18:34:42.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.805</Modified>
+      <Modified>2018-07-16T18:34:42.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.895</Modified>
+      <Modified>2018-07-16T18:34:42.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:07.970</Modified>
+      <Modified>2018-07-16T18:34:42.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.014</Modified>
+      <Modified>2018-07-16T18:34:42.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.038</Modified>
+      <Modified>2018-07-16T18:34:42.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.073</Modified>
+      <Modified>2018-07-16T18:34:42.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.094</Modified>
+      <Modified>2018-07-16T18:34:42.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.126</Modified>
+      <Modified>2018-07-16T18:34:42.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.203</Modified>
+      <Modified>2018-07-16T18:34:42.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.242</Modified>
+      <Modified>2018-07-16T18:34:42.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.820</Modified>
+      <Modified>2018-07-16T18:34:43.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.858</Modified>
+      <Modified>2018-07-16T18:34:43.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.928</Modified>
+      <Modified>2018-07-16T18:34:43.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:08.979</Modified>
+      <Modified>2018-07-16T18:34:43.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.009</Modified>
+      <Modified>2018-07-16T18:34:43.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.046</Modified>
+      <Modified>2018-07-16T18:34:43.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.075</Modified>
+      <Modified>2018-07-16T18:34:43.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.116</Modified>
+      <Modified>2018-07-16T18:34:43.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.186</Modified>
+      <Modified>2018-07-16T18:34:43.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.222</Modified>
+      <Modified>2018-07-16T18:34:43.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.302</Modified>
+      <Modified>2018-07-16T18:34:43.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.395</Modified>
+      <Modified>2018-07-16T18:34:43.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-07-12T13:41:57.557</Modified>
+      <Modified>2018-07-16T18:32:29.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.461</Modified>
+      <Modified>2018-07-16T18:34:43.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.518</Modified>
+      <Modified>2018-07-16T18:34:44.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.595</Modified>
+      <Modified>2018-07-16T18:34:44.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.775</Modified>
+      <Modified>2018-07-16T18:34:44.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-07-12T13:44:09.835</Modified>
+      <Modified>2018-07-16T18:34:44.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.080</Modified>
+      <Modified>2018-07-16T18:34:44.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.252</Modified>
+      <Modified>2018-07-16T18:34:44.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.473</Modified>
+      <Modified>2018-07-16T18:34:44.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.613</Modified>
+      <Modified>2018-07-16T18:34:44.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\IndustrialAppClassLib.dll">
       <PackagePath>IndustrialAppClassLib.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.672</Modified>
+      <Modified>2018-07-16T18:34:44.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.716</Modified>
+      <Modified>2018-07-16T18:34:44.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.778</Modified>
+      <Modified>2018-07-16T18:34:44.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.855</Modified>
+      <Modified>2018-07-16T18:34:44.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2018-07-12T13:44:10.979</Modified>
+      <Modified>2018-07-16T18:34:44.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-07-12T13:44:11.036</Modified>
+      <Modified>2018-07-16T18:34:44.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-07-12T13:44:11.190</Modified>
+      <Modified>2018-07-16T18:34:45.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2018-07-12T13:44:11.281</Modified>
+      <Modified>2018-07-16T18:34:45.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.605</Modified>
+      <Modified>2018-07-16T18:34:41.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
-      <Modified>2018-07-12T13:44:06.745</Modified>
+      <Modified>2018-07-16T18:34:41.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Tallboy\Tallboy\Tallboy\IndustrialApp\UWP\IndustialApp\bin\x86\Debug\Core\IndustialApp.exe">
       <PackagePath>IndustialApp.exe</PackagePath>
-      <Modified>2018-07-12T13:44:11.854</Modified>
+      <Modified>2018-07-16T18:34:45.601</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

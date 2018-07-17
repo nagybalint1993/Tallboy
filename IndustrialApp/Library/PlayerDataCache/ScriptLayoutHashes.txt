@@ -301,6 +301,7 @@ d2f5a7716b4289ae5a1527a76e916505 Assembly-CSharp.dll:HoloToolkit.Unity.SortingLa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.KeyboardManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityEngine.XR.iOS.ConnectToEditor
 dfa416d091c6a74c4e4ef8229469c6ec Assembly-CSharp.dll:HoloToolkit.Sharing.VoiceChat.MicrophoneTransmitter
+03c874708575054ab2d7958e2da0a26b Assembly-CSharp.dll:.MenuController
 26215f135eeb48d8fa1189498c107f6c Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 0561521e336e270e6e5a9c61387cb838 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 2e0fd93f459db951da0e2e94e2e33fb7 Vuforia.UnityExtensions.dll:Vuforia.AnchorStageBehaviour
@@ -686,4 +687,5 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameObjectMoverZ
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.VoiceCommandEvent
